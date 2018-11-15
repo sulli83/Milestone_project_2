@@ -2,20 +2,22 @@ queue()
     .defer(d3.csv, "data/champions.csv")
     .await(makeGraphs);
     
-function makeGraphs(error, salaryData) {
-    var ndx = crossfilter(salaryData);
+function makeGraphs(error, championsData) {
+    var ndx = crossfilter(championsData);
     
-    show_gender_balance(ndx);
+    prefered_style(ndx);
+    champions_nationality(ndx);
+    
     
     dc.renderAll();
 }
 
-function show_gender_balance(ndx) {
-    var dim = ndx.dimension(dc.pluck("nationality"));
+function prefered_style(ndx) {
+    var dim = ndx.dimension(dc.pluck('style'));
     var group = dim.group();
     
-    dc.barChart("#gender-balance")
-        .width(400)
+    dc.barChart("#champions_style")
+        .width(700)
         .height(300)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
         .dimension(dim)
@@ -24,18 +26,25 @@ function show_gender_balance(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .xAxisLabel("nationality")
-        .yAxis().ticks(1);
+        .xAxisLabel("Prefered Style")
+        .yAxis().ticks(20);
 }
 
+function champions_nationality(ndx) {
+    var dim = ndx.dimension(dc.pluck('nationality'));
+    var group = dim.group();
+    
+    dc.barChart("#nationality_of_champions")
+        .width(700)
+        .height(300)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Fighters Nationality")
+        .yAxis().ticks(20);
+}
 
- function makeGraphs(error, styleData) {
-            var ndx = crossfilter(styleData);
-            var name_dim = ndx.dimension(dc.pluck('name'));
-            var champions = name_dim.group().reduceSum(dc.pluck('style'));
-            dc.pieChart('#per-person-chart')
-                .height(330)
-                .radius(90)
-                .transitionDuration(1500)
-                .dimension(style_dim)
-                .group(champions);
