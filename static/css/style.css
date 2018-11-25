@@ -3,3 +3,12 @@
     top:40px;
     left:40px;
 }
+
+section{
+    display:flex;
+    flex-direction:row;
+}
+
+.pie_block{
+    flex-direction:row;
+}
