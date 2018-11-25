@@ -1,50 +1,43 @@
-queue()
-    .defer(d3.csv, "data/champions.csv")
-    .await(makeGraphs);
-    
-function makeGraphs(error, championsData) {
-    var ndx = crossfilter(championsData);
-    
-    prefered_style(ndx);
-    champions_nationality(ndx);
-    
-    
-    dc.renderAll();
-}
+  queue()
+            .defer(d3.csv, "/housing data/Social Housing Construction Status Report Q1 2018.csv")
+            .await(makeGraphs);
+        
+        function makeGraphs(error, housingData) {
+            var ndx = crossfilter(housingData);
+            var name_dim = ndx.dimension(dc.pluck('Local Authority'));
+            var total_number_of_units = name_dim.group().reduceSum(dc.pluck('No. of Units'));
+            dc.pieChart('#units_per_LA')
+                .height(1000)
+                .radius(400)
+                .transitionDuration(1500)
+                .dimension(name_dim)
+                .group(total_number_of_units);
+            
+            var store_dim = ndx.dimension(dc.pluck('Funding Programme'));
+            var total_spend_per_store = name_dim.group().reduceSum(dc.pluck('No. of Units'));
+            dc.pieChart('#per-store-chart')
+                .height(330)
+                .radius(90)
+                .transitionDuration(1500)
+                .dimension(name_dim)
+                .group(total_spend_per_store);
+            /*
+            var state_dim = ndx.dimension(dc.pluck('state'));
+            var total_spend_per_state = name_dim.group().reduceSum(dc.pluck('spend'));
+            dc.pieChart('#per-state-chart')
+                .height(330)
+                .radius(90)
+                .transitionDuration(1500)
+                .dimension(name_dim)
+                .group(total_spend_per_state);
+            */
+            dc.renderAll();
+        }
 
-function prefered_style(ndx) {
-    var dim = ndx.dimension(dc.pluck('style'));
-    var group = dim.group();
-    
-    dc.barChart("#champions_style")
-        .width(700)
-        .height(300)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
-        .dimension(dim)
-        .group(group)
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .elasticY(true)
-        .xAxisLabel("Prefered Style")
-        .yAxis().ticks(20);
-}
 
-function champions_nationality(ndx) {
-    var dim = ndx.dimension(dc.pluck('nationality'));
-    var group = dim.group();
+
+
+
     
-    dc.barChart("#nationality_of_champions")
-        .width(700)
-        .height(300)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
-        .dimension(dim)
-        .group(group)
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .elasticY(true)
-        .xAxisLabel("Fighters Nationality")
-        .yAxis().ticks(20);
-}
+      
 
