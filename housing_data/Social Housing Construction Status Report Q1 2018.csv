@@ -1,4 +1,4 @@
-No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved Housing Body,Stage 1 Capital Appraisal,Stage 2 Pre Planning ,Stage 3 Pre Tender design,Stage 4 Tender Report or Final Turnkey/CALF approval,On Site,Completed
+No.,Funding Programme,Local Authority,Scheme/Project Name,Units,Approved Housing Body,Stage 1 Capital Appraisal,Stage 2 Pre Planning ,Stage 3 Pre Tender design,Stage 4 Tender Report or Final Turnkey/CALF approval,On Site,Completed
 ,SHIP CONSTRUCTION TURNKEY,Carlow,"Tullow Road, Carlow - Phase 1",24,*N/A,,,,,Q4-2017,
 ,SHIP CONSTRUCTION TURNKEY,Carlow,"Tullow Road, Carlow - Phase 2",16,*N/A,,,,,Q4-2017,
 ,SHIP CONSTRUCTION TURNKEY,Carlow,"Tullow Road, Carlow - Phase 3",23,*N/A,,,,,Q4-2017,
@@ -23,7 +23,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Carlow,"Barrett Street, Bagnalstown",10,Tintean Housing Association,,,,,,Q1-2018
 ,CALF CONSTRUCTION TURNKEY,Carlow,"River Court,  Carlow 1/4*",10,Co-operative Housing Ireland,,,,Scheme approved for funding Q1 - 2018,,
 ,CALF CONSTRUCTION TURNKEY,Carlow,"River Court,  Carlow 2/4",16,Co-operative Housing Ireland,,,,Scheme approved for funding Q1 - 2018,,
-,CALF CONSTRUCTION TURNKEY,Carlow,"Browneshill Wood, Browneshill Road, Chapelstown, Carlow 1/1",59,Túath Housing Association Ltd,,,,,Q1-2018,
+,CALF CONSTRUCTION TURNKEY,Carlow,"Browneshill Wood, Browneshill Road, Chapelstown, Carlow 1/1",59,Tï¿½ath Housing Association Ltd,,,,,Q1-2018,
 ,CALF CONSTRUCTION TURNKEY,Carlow,"River Court,  Carlow 3/4",12,Co-operative Housing Ireland,,,,Scheme approved for funding Q1 - 2018,,
 ,CALF CONSTRUCTION TURNKEY,Carlow,"River Court,  Carlow  4/4",9,Co-operative Housing Ireland,,,,Scheme approved for funding Q1 - 2018,,
 ,SHIP CONSTRUCTION,Cavan,"Rosehill, Mullagh (Phase 6)",8,*N/A,,,,,Q1-2018,
@@ -33,8 +33,8 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Cavan,"Clones Road, Butlersbridge",2,*N/A,"Stage 1 approved in Q4-2017, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Cavan,"Corstruce, Ballinagh",4,*N/A,"Stage 1 approved in Q1-2018, outline design and costs are now being prepared.",,,,,
 ,CALF CONSTRUCTION TURNKEY,Cavan,"Cluain Dara, Kingscourt",16,Cluid Housing Association,,,,,,Q4-2016
-,CALF CONSTRUCTION TURNKEY,Cavan,"Drumalee Manor, Drumalee Phase 2",7,Túath Housing Association,,,,,Q1-2017,
-,CALF CONSTRUCTION TURNKEY,Cavan,"Drumalee Manor, Drumalee Phase 1",4,Túath Housing Association,,,,,Q1-2017,
+,CALF CONSTRUCTION TURNKEY,Cavan,"Drumalee Manor, Drumalee Phase 2",7,Tï¿½ath Housing Association,,,,,Q1-2017,
+,CALF CONSTRUCTION TURNKEY,Cavan,"Drumalee Manor, Drumalee Phase 1",4,Tï¿½ath Housing Association,,,,,Q1-2017,
 ,SHIP CONSTRUCTION TURNKEY,Clare,"River View, School Road, Corofin",2,*N/A,,,,,Q4-2017,
 ,SHIP CONSTRUCTION,Clare,"Roslevan, Ennis",8,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Clare,Feakle,13,*N/A,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
@@ -84,9 +84,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CAS CONSTRUCTION,Cork City,"Ceanncora Lawn, Ballinlough",1,Cork Mental Health Voluntary Housing Association Ltd,,,,,Q2-2017,
 ,CAS CONSTRUCTION,Cork City,"St. Joachim & Anne's, Anglesea Street",8,Simon Community : Cork Simon,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Cork City,"27-29 Dublin Street, Blackpool",10,Respond,,,,,Q4-2016,
-,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 1/3",16,Túath Housing Association,,,,,Q1-2018,
-,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 2/3",15,Túath Housing Association,,,,,Q1-2018,
-,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 3/3",21,Túath Housing Association,,,,,Q1-2018,
+,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 1/3",16,Tï¿½ath Housing Association,,,,,Q1-2018,
+,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 2/3",15,Tï¿½ath Housing Association,,,,,Q1-2018,
+,CALF CONSTRUCTION TURNKEY,Cork City,"the Meadows, Knopckacullen Ease, Gurranabraher, Cork 3/3",21,Tï¿½ath Housing Association,,,,,Q1-2018,
 ,CALF CONSTRUCTION TURNKEY,Cork City,"Millfield Cottages, Blackpool",18,Respond!,,,,,Q1-2017,
 ,CALF CONSTRUCTION TURNKEY,Cork City,"Leitrim Street, Cork City",18,Cluid Housing Association,,,,Scheme approved for CALF funding Q3-2016,,
 ,CALF CONSTRUCTION TURNKEY,Cork City,"Popes Road, Blackpool",7,Cluid Housing Association,,,,,Q1-2017,
@@ -117,7 +117,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION RAPID,Cork County,"Station Road, Blarney",18,*N/A,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION RAPID,Cork County,"Bluepool, Kanturk",12,*N/A,,"Stage 2 approved in Q2-2017, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Cork County,"Ard Na Greine, Cortmacsherry",15,*N/A,"Stage 1 approved in Q2-2017, outline design and costs are now being prepared.",,,,,
-,SHIP CONSTRUCTION,Cork County,"Tower View/C£irt na Sil¡n¡, Cloyne, East Cork",9,*N/A,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
+,SHIP CONSTRUCTION,Cork County,"Tower View/Cï¿½irt na Silï¿½nï¿½, Cloyne, East Cork",9,*N/A,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
 ,SHIP CONSTRUCTION,Cork County,"Beechgrove, Clonakilty",57,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Cork County,"Castletreasure Grove, Douglas",1,*N/A,"Stage 1 approved in Q3-2016, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Cork County,"Poulavone, Ballincollig",57,*N/A,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
@@ -137,9 +137,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CAS CONSTRUCTION,Cork County,"Avenue House, Bandon",9,Bandon Geriatric ? Community Council,,,,,,Q1-2018
 ,CAS CONSTRUCTION,Cork County,"Church View, Love Lane, Charleville",4,Charleville Care Project Ltd,,"Stage 2 approved in Q3-2015, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Cork County,"Fellowship House, Togher",31,Tabor Lodge Addiction ? Housing Services Ltd,,,,,Q1-2017,
-,CALF CONSTRUCTION TURNKEY,Cork County,"Tanners Field, Bandon, Co Cork *",5,Túath Housing Association Ltd,,,,Scheme approved for CALF Funding Q4-2017,,
-,CALF CONSTRUCTION TURNKEY,Cork County,"Tanners Field, Bandon, Co Cork *",6,Túath Housing Association Ltd,,,,Scheme approved for CALF Funding Q4-2017,,
-,CALF CONSTRUCTION TURNKEY,Cork County,"College Manor, Cobh",10,Túath Housing Association,,,,,,Q4-2016
+,CALF CONSTRUCTION TURNKEY,Cork County,"Tanners Field, Bandon, Co Cork *",5,Tï¿½ath Housing Association Ltd,,,,Scheme approved for CALF Funding Q4-2017,,
+,CALF CONSTRUCTION TURNKEY,Cork County,"Tanners Field, Bandon, Co Cork *",6,Tï¿½ath Housing Association Ltd,,,,Scheme approved for CALF Funding Q4-2017,,
+,CALF CONSTRUCTION TURNKEY,Cork County,"College Manor, Cobh",10,Tï¿½ath Housing Association,,,,,,Q4-2016
 ,CALF CONSTRUCTION TURNKEY,Cork County,"Ticknock, Cobh",8,Respond!,,,,,Q1-2017,
 ,CALF CONSTRUCTION TURNKEY,Cork County,"Beach Road, Passage West",3,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Cork County,"Lackaduff, Codrum, Macroom, Co Cork  1/1",5,Tuath Housing Association Ltd,,,,Q1 2018,,
@@ -167,7 +167,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,DLR,Rochestown House (Phase 2),34,*N/A,,,,,,Q1-2016
 ,SHIP CONSTRUCTION,DLR,"41 Ballyogan Ave., Ballyogan, Co. Dublin",2,*N/A,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,DLR,"30 Obelisk Walk, Blackrock",4,St. John of God Housing Association Ltd,"Stage 1 approved in Q4-2016, outline design and costs are now being prepared.",,,,,
-,CALF CONSTRUCTION TURNKEY,DLR,Respond & Tuath Project Dublin 18 area.,49,Túath Housing Association,,,,Scheme approved for CALF funding Q1-2017,,
+,CALF CONSTRUCTION TURNKEY,DLR,Respond & Tuath Project Dublin 18 area.,49,Tï¿½ath Housing Association,,,,Scheme approved for CALF funding Q1-2017,,
 ,CALF CONSTRUCTION TURNKEY,DLR,"Hyde Road, Belmont, Stepaside",8,Respond!,,,,,Q3-2016,
 ,CALF CONSTRUCTION TURNKEY,DLR,"Bishops Gate, Kilternan, Dublin 18",6,Cluid Housing Association,,,,,Q3-2017,
 ,CALF CONSTRUCTION TURNKEY,DLR,"The Avenue, Glenside, Carrickmines Green, Dublin 18 *",5,Fold Ireland Housing Association,,,,,Q3-2017,
@@ -233,7 +233,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,PUBLIC PRIVATE PARTNERSHIP (Bundle 1),Dublin City,Scribblestown,70,*N/A,,,Q1 2018,,,
 ,CAS CONSTRUCTION,Dublin City,"38/39 Bolton Street, Dublin 1",8,Arlington Novas Ireland Ltd,"Stage 1 approved in Q4-2017, outline design and costs are now being prepared.",,,,,
 ,CAS CONSTRUCTION,Dublin City,Beech Hill,19,Royal Hospital Donnybrook Voluntary Housing Association Ltd,,,,,Q4-2017,
-,CAS CONSTRUCTION,Dublin City,"Ellis Court, Dublin",23,Túath Housing Association,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
+,CAS CONSTRUCTION,Dublin City,"Ellis Court, Dublin",23,Tï¿½ath Housing Association,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Dublin City,"""Martanna House"" High Park, Grace Park Road,Dublin 9",8,Respond,,,,,Q4-2017,
 ,CAS CONSTRUCTION,Dublin City,"1 - 2 Rafter's Lane, Dublin 12",11,Walkinston Housing Association Ltd (WALK),,,,"Stage 4 approved in Q1-2018, the scheme is now fully approved.",,
 ,CAS CONSTRUCTION,Dublin City,180-187 Townsend Street,18,Peter McVerry Trust Ltd,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
@@ -249,18 +249,18 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"St Agnes Convent, Armagh Road, Crumlin, Dublin 12",97,Fold Ireland Housing Association,,,,,Q1-2017,
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Clongriffin, Dublin 13",84,The Iveagh Trust,,,,,Q3-2017,
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Long Mile Road, Dublin 12",61,Respond!,,,,,Q2-2017,
-,CALF CONSTRUCTION TURNKEY,Dublin City,"Thornwood, Beaumont - Phase 1",46,Túath Housing Association,,,,,,Q3-2016
+,CALF CONSTRUCTION TURNKEY,Dublin City,"Thornwood, Beaumont - Phase 1",46,Tï¿½ath Housing Association,,,,,,Q3-2016
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Stormanstown Hall, Ballymun Road, (revised)",42,Oaklee Housing Trust,,,,,Q4-2016,
-,CALF CONSTRUCTION TURNKEY,Dublin City,"Thornwood, Beaumont - Final Phase",22,Túath Housing Association,,,,,,Q1-2017
-,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 2",21,Túath Housing Association,,,,,,Q1-2017
+,CALF CONSTRUCTION TURNKEY,Dublin City,"Thornwood, Beaumont - Final Phase",22,Tï¿½ath Housing Association,,,,,,Q1-2017
+,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 2",21,Tï¿½ath Housing Association,,,,,,Q1-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Chanel College, Coolock Village, Malahide Road, Dublin 5",16,Respond!,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 1",14,Túath Housing Association,,,,,,Q4-2016
-,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 3",10,Túath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 1",14,Tï¿½ath Housing Association,,,,,,Q4-2016
+,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Phase 3",10,Tï¿½ath Housing Association,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"175 176 North Strand Road, 5 Lamps, Dublin 1",10,Co-operative Housing Ireland,,,,,Q1-2018,
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Milrose House, Bluebell Avenue, Dublin 12",8,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Merville Court, Merville Avenue, Fairview",5,Co operative Ireland,,,,,,Q1-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"Camac Place, Bluebell, Dublin 12",5,Oaklee Housing Trust,,,,Scheme approved for CALF funding Q2-2017,,
-,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Final Phase",3,Túath Housing Association,,,,,,Q3-2017
+,CALF CONSTRUCTION TURNKEY,Dublin City,"An Riasc, Farnham Drive, Finglas - Final Phase",3,Tï¿½ath Housing Association,,,,,,Q3-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"11 13 Crumlin Village, Dublin 12 Phase 1",3,Cluid Housing Association,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Dublin City,"11 13 Crumlin Village, Dublin 12 Phase 2",2,Cluid Housing Association,,,,,,Q3-2017
 ,CALF CONSTRUCTION,Dublin City,"St Mary?s Mansions, Dublin 1",80,Cluid Housing Association,,,,,Q4-2017,
@@ -269,7 +269,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION,Dublin City,"Tonlegee Road, Dublin 5 ",47,Fold Housing Association Ireland Ltd,,,,,Q4-2017,
 ,CALF CONSTRUCTION,Dublin City,"Dolphin Park, Rialto, Dublin 8",43,Fold Ireland Housing Association,,,,Scheme approved for Revised CALF funding Q3-2017,,
 ,CALF CONSTRUCTION,Dublin City,"Richmond Road, Dublin 9",39,Co-operative Housing Ireland,,,,,Q2-2017,
-,CALF CONSTRUCTION,Dublin City,"Raleigh Court, Crumlin",33,Túath Housing Association,,,,,Q2-2017,
+,CALF CONSTRUCTION,Dublin City,"Raleigh Court, Crumlin",33,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION,Dublin City,"Broome Lodge, Dunmanus Court, Cabra",33,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION,Dublin City,"5 6 Johns Lane West, Dublin 8",31,Focus Ireland,,,,,Q2-2017,
 ,CALF CONSTRUCTION,Dublin City,"84 North King Street, Dublin 7 ",30,Co-operative Housing Ireland,,,,Scheme approved for CALF Funding Q4-2017,,
@@ -300,7 +300,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Fingal,"Racecourse Common, Lusk (Phase 2.1)",25,*N/A,,,,,,Q4-2017
 ,SHIP CONSTRUCTION,Fingal,"The Grange, Ballyboughal (Part 2)",6,*N/A,,,,,Q4-2016,
 ,SHIP CONSTRUCTION,Fingal,"Racecourse Commons, Lusk (Phase 2.2) ",15,*N/A,,,,,,Q1-2018
-,CAS CONSTRUCTION,Fingal,Killhedge Lane Dun Emer,48,Túath Housing Association,"Stage 1 approved in Q1-2017, outline design and costs are now being prepared.",,,,,
+,CAS CONSTRUCTION,Fingal,Killhedge Lane Dun Emer,48,Tï¿½ath Housing Association,"Stage 1 approved in Q1-2017, outline design and costs are now being prepared.",,,,,
 ,CAS CONSTRUCTION,Fingal,"Ravenswood, North Road, Finglas",6,Peter McVerry Trust Ltd,,,,,Q1-2018,
 ,CAS CONSTRUCTION,Fingal,"22 College Street, Baldoyle",4,Cluid Housing Association,,"Stage 2 approved in Q3-2016, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Fingal,"Darcystown, Ringfort, Balrothery",9,North ? East Housing Association Ltd,,,,,,Q3-2017
@@ -309,11 +309,11 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Fingal,"The Gallery, Donabate",43,Oaklee Housing Trust,,,,,Q2-2017,
 ,CALF CONSTRUCTION TURNKEY,Fingal,"Weavers Walk, Clonsilla Road, Dublin 15",33,Co-operative Housing Ireland,,,,,Q3-2017,
 ,CALF CONSTRUCTION TURNKEY,Fingal,"Millers Glen, Oldtown, Swords",28,The Iveagh Trust,,,,,Q1-2018,
-,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 2",21,Túath Housing Association,,,,,,Q1-2017
-,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 1",19,Túath Housing Association,,,,,,Q4-2016
-,CALF CONSTRUCTION TURNKEY,Fingal,"St Werburghs Court, Drynam Rd, Swords*",18,Túath Housing Association,,,,,,Q4-2017
+,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 2",21,Tï¿½ath Housing Association,,,,,,Q1-2017
+,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 1",19,Tï¿½ath Housing Association,,,,,,Q4-2016
+,CALF CONSTRUCTION TURNKEY,Fingal,"St Werburghs Court, Drynam Rd, Swords*",18,Tï¿½ath Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Fingal,"St Marnock's Bay, Portmarnock *",10,Cluid Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 3",8,Túath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Fingal,"Castlegrange, Clonsilla - Phase 3",8,Tï¿½ath Housing Association,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Fingal,"Ladyswell Road & Church Road, Mulhuddart, Dublin 15 ",43,Cluid Housing Association,,,,Scheme approved for CALF funding Q4-2017 post tender proposal ,,
 ,CALF CONSTRUCTION TURNKEY,Fingal,"Millers Glen, Phase 3, Oldtown, Swords",14,The Iveagh Trust,,,,Scheme approved for CALF funding Q1 2018,,
 ,SHIP CONSTRUCTION,Galway City,Ballymoneen Road (Phase 2),78,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
@@ -329,11 +329,11 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Galway City,"Maigh Rua, Doughiska, Galway",23,Co operative Ireland,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Galway City,"Murrough, Renmore, Galway",20,Cluid Housing Association,,,,Scheme approved for CALF funding Q2-2017,,
 ,CALF CONSTRUCTION TURNKEY,Galway City,"Boireann Beag, Ros Cam, Galway",16,Cluid Housing Association,,,,,,Q4-2016
-,CALF CONSTRUCTION TURNKEY,Galway City,"Reilean, Roscam, Block 5 Galway *",12,Túath Housing Association,,,,,,Q2-2017
-,CALF CONSTRUCTION TURNKEY,Galway City,"Reilean, Roscam, Block 4 Galway *",12,Túath Housing Association,,,,,,Q2-2017
-,CALF CONSTRUCTION TURNKEY,Galway City,"Maoilin, Ballymoneen Road, Galway - Phase 2 *",4,Túath Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Galway City,"Maoilin, Ballymoneen Road, Galway - Phase 1 *",2,Túath Housing Association,,,,,,Q1-2017
-,CALF CONSTRUCTION TURNKEY,Galway City,"Cnoc na R¡, clybaun Road, Galway *",2,Cluid Housing Association,,,,,,Q3-2017
+,CALF CONSTRUCTION TURNKEY,Galway City,"Reilean, Roscam, Block 5 Galway *",12,Tï¿½ath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Galway City,"Reilean, Roscam, Block 4 Galway *",12,Tï¿½ath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Galway City,"Maoilin, Ballymoneen Road, Galway - Phase 2 *",4,Tï¿½ath Housing Association,,,,,,Q4-2017
+,CALF CONSTRUCTION TURNKEY,Galway City,"Maoilin, Ballymoneen Road, Galway - Phase 1 *",2,Tï¿½ath Housing Association,,,,,,Q1-2017
+,CALF CONSTRUCTION TURNKEY,Galway City,"Cnoc na Rï¿½, clybaun Road, Galway *",2,Cluid Housing Association,,,,,,Q3-2017
 ,CALF CONSTRUCTION TURNKEY,Galway City,"77, 80 and 81 Maoilin, Ballymoneen Road, Knocknacarra, Galway City",3,Cluid Housing Association,,,,Scheme approved for CALF funding Q1-2018,,
 ,SHIP CONSTRUCTION TURNKEY,Galway County,Kinvara,6,*N/A,,,,,,Q4-2017
 ,SHIP CONSTRUCTION TURNKEY,Galway County,Athenry,14,*N/A,,,,,,Q4-2017
@@ -346,7 +346,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Galway County,"Callowfinish, Carna (SRD)",1,*N/A,,,,,Q2-2017,
 ,SHIP CONSTRUCTION,Galway County,"Waterdale, Claregalway (SRD)",1,*N/A,,,,,Q4-2017,
 ,SHIP CONSTRUCTION,Galway County,Corndulla (SRD),1,*N/A,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
-,SHIP CONSTRUCTION,Galway County,Cill Ciar n (SRD),1,*N/A,,,,,Q3-2017,
+,SHIP CONSTRUCTION,Galway County,Cill Ciarï¿½n (SRD),1,*N/A,,,,,Q3-2017,
 ,SHIP CONSTRUCTION,Galway County,Kinvara (SRD),1,*N/A,,,,,Q2-2017,
 ,SHIP CONSTRUCTION,Galway County,Roundstone,10,*N/A,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Galway County,"Sruchain an Chlair, Oughterard",10,*N/A,"Stage 1 approved in Q4-2017, outline design and costs are now being prepared.",,,,,
@@ -354,7 +354,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Galway County,"Bridge Court, Ahascragh, Ballinasloe",16,*N/A,"Stage 1 approved in Q1-2018, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Galway County,"Gilmartin Road, Tuam",61,*N/A,,,,,Q4-2017,
 ,CAS CONSTRUCTION,Galway County,Letterfrack (Phase 2),11,Cluid Housing Association,"Stage 1 approved in Q1-2017, outline design and costs are now being prepared.",,,,,
-,CAS CONSTRUCTION,Galway County,"Rossaveal Cottages, Ros a Mh¡l, South Connemara",8,Tearmann Eanna Teoranta,"Stage 1 approved in Q4-2016, outline design and costs are now being prepared.",,,,,
+,CAS CONSTRUCTION,Galway County,"Rossaveal Cottages, Ros a Mhï¿½l, South Connemara",8,Tearmann Eanna Teoranta,"Stage 1 approved in Q4-2016, outline design and costs are now being prepared.",,,,,
 ,CAS CONSTRUCTION,Galway County,"Cregboy, Claregalway",14,Claregalway and District Day Care Centre,,,"Stage 3 approved in Q4-2017, the scheme is now being tendered.",,,
 ,CAS CONSTRUCTION,Galway County,"Eanach Mheain, Carraroe",13,Tearmann Eanna Teoranta,,"Stage 2 approved in Q2-2016, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Galway County,Mountbellew,5,Mountbellew Voluntary Homes Association,"Stage 1 approved in Q3-2015, outline design and costs are now being prepared.",,,,,
@@ -439,9 +439,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CAS CONSTRUCTION,Kildare,"Mansfield Grove, Athy",4,KARE Promoting Inclusion for People with Intellectual Disabilities,"Stage 1 approved in Q1-2016, outline design and costs are now being prepared.",,,,,
 ,CAS CONSTRUCTION,Kildare,"Jigginstown House, Naas",12,Homeless Care Ltd,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
 ,CALF CONSTRUCTION TURNKEY,Kildare,"Gallows Hill, Athy",24,Respond!,,,,Scheme approved for CALF funding Q2-2017,,
-,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 3",16,Túath Housing Association,,,,,,Q1-2018
-,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 2",16,Túath Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 1",13,Túath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 3",16,Tï¿½ath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 2",16,Tï¿½ath Housing Association,,,,,,Q4-2017
+,CALF CONSTRUCTION TURNKEY,Kildare,"Roseberry Hill, Newbridge - Phase 1",13,Tï¿½ath Housing Association,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Kildare,"The Pike, Shenagun, Castledermot",6,Respond!,,,,Scheme approved for CALF funding Q1-2017,,
 ,CALF CONSTRUCTION TURNKEY,Kildare,"Moorefield Road, Newbridge",2,Co-operative Housing Ireland,,,,,Q2-2017,
 ,CALF CONSTRUCTION TURNKEY,Kildare,"Millfield Manor, Newbridge, Co. Kildare *",19,Cluid Housing Association,,,,Scheme approved for CALF funding Q1-2018,,
@@ -552,8 +552,8 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,REGENERATION,Limerick,2016 Southhill Rebuild,8,*N/A,,,,,,Q4-2016
 ,REGENERATION,Limerick,2016 St. Mary's Park Rebuild,9,*N/A,,,,,,Q4-2016
 ,REGENERATION,Limerick,"BCW Vacant Refurbs, Lot 1 & 2**",13,*N/A,,,,,,Q4-2016
-,REGENERATION,Limerick,St. Mary's Park Infills,19,Túath Housing Association,,,,,Q3-2017,
-,REGENERATION,Limerick,Cliona Park (Phase 3),18,Túath Housing Association,,"Stage 2 approved in Q3-2016, full design/tender being prepared.",,,,
+,REGENERATION,Limerick,St. Mary's Park Infills,19,Tï¿½ath Housing Association,,,,,Q3-2017,
+,REGENERATION,Limerick,Cliona Park (Phase 3),18,Tï¿½ath Housing Association,,"Stage 2 approved in Q3-2016, full design/tender being prepared.",,,,
 ,REGENERATION,Limerick,Carew Park,37,*N/A,"Stage 1 approved in Q1-2015, outline design and costs are now being prepared.",,,,,
 ,REGENERATION,Limerick,45-46 Cliona Park,2,*N/A,,"Stage 2 approved in Q1-2016, full design/tender being prepared.",,,,
 ,REGENERATION,Limerick,Dalgaish Park,24,Cluid Housing Association,"Stage 1 approved in Q2-2015, outline design and costs are now being prepared.",,,,,
@@ -601,20 +601,20 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,REGENERATION,Louth,Cox's Demesne Phase 2b,22,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,PUBLIC PRIVATE PARTNERSHIP (Bundle 1),Louth,"Ravel Ardee Road, Dunleer",80,*N/A,,,Q1 2018,,,
 ,CAS CONSTRUCTION,Louth,"5 Slieveroe Cresent, Dundalk",1,Cluid Housing Association,"Stage 1 approved in Q2-2017, outline design and costs are now being prepared.",,,,,
-,CAS CONSTRUCTION,Louth,"Castletowncooley, Riverstown, Dundalk",1,Túath Housing Association,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
+,CAS CONSTRUCTION,Louth,"Castletowncooley, Riverstown, Dundalk",1,Tï¿½ath Housing Association,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Louth,"Barrack Street, Dundalk",8,Simon Community : Dundalk Simon,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Louth,"Saltown, Dundalk",7,North ? East Housing Association Ltd,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
 ,CAS CONSTRUCTION,Louth,"McArdle Green (Moneymore), Drogheda",1,North ? East Housing Association Ltd,,,,,Q1-2018,
 ,CAS CONSTRUCTION,Louth,"Tierney Street, Ardee",7,Oaklee Housing Trust,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
 ,CAS CONSTRUCTION,Louth,"Tredagh View, Drogheda",1,Respond,,,,,,Q1-2017
 ,CAS CONSTRUCTION,Louth,"36 Strand, Clogherhead",4,St. John of God Housing Association Ltd,"Stage 1 approved in Q2-2017, outline design and costs are now being prepared.",,,,,
-,CAS CONSTRUCTION,Louth,Coulter Park,6,Túath Housing Association,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
-,CALF CONSTRUCTION TURNKEY,Louth,"Castleguard, Ardee",29,Túath Housing Association,,,,,,Q1-2018
-,CALF CONSTRUCTION TURNKEY,Louth,"Caslteguard, Ardee",73,Túath Housing Association,,,,,Q2-2017,
+,CAS CONSTRUCTION,Louth,Coulter Park,6,Tï¿½ath Housing Association,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
+,CALF CONSTRUCTION TURNKEY,Louth,"Castleguard, Ardee",29,Tï¿½ath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Louth,"Caslteguard, Ardee",73,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION TURNKEY,Louth,"Rathmullen Road, Drogheda",54,North ? East Housing Association Ltd,,,,,Q4-2017,
-,CALF CONSTRUCTION TURNKEY,Louth,"Rathmullen Road, Drogheda",51,Túath Housing Association,,,,,Q4-2017,
+,CALF CONSTRUCTION TURNKEY,Louth,"Rathmullen Road, Drogheda",51,Tï¿½ath Housing Association,,,,,Q4-2017,
 ,CALF CONSTRUCTION TURNKEY,Louth,"Avourwen Meadows, Drogheda",50,Oaklee Housing Trust,,,,Scheme approved for CALF funding Q1-2017,,
-,CALF CONSTRUCTION TURNKEY,Louth,"Liscorrie, Bog Lane, Drogheda ",41,Túath Housing Association,,,,,,Q4-2017
+,CALF CONSTRUCTION TURNKEY,Louth,"Liscorrie, Bog Lane, Drogheda ",41,Tï¿½ath Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Louth,"Mount Hamilton, Dundalk Phase 2",31,Cluid Housing Association,,,,,Q4-2016,
 ,CALF CONSTRUCTION TURNKEY,Louth,"Mount Hamilton, Dundalk Phase 1",12,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Louth,Coulter Place Armagh Road Dundalk Phase 2,12,Cluid Housing Association,,,,,,Q3-2017
@@ -624,9 +624,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Louth,"Castle Court, Castlebellingham - Phase 1",4,Cluid Housing Association,,,,,,Q1-2017
 ,CALF CONSTRUCTION TURNKEY,Louth,"Knock Shee, Old Golf Links road, Blackrock, Co. Louth",3,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION,Louth,"Scarlett Street, Drogheda",15,North  East Housing Association Ltd,,,,,Q1-2018,
-,CALF CONSTRUCTION,Louth,"Clos na Manach, Carlingford",10,Túath Housing Association,,,,,Q2-2017,
+,CALF CONSTRUCTION,Louth,"Clos na Manach, Carlingford",10,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION,Louth,Rath na Gloinne,3,Cluid Housing Association,,,,,,Q3-2016
-,CALF CONSTRUCTION,Louth,"Bishops Court, Dundalk",2,Túath Housing Association,,,,Scheme approved for CALF funding Q2-2017,,
+,CALF CONSTRUCTION,Louth,"Bishops Court, Dundalk",2,Tï¿½ath Housing Association,,,,Scheme approved for CALF funding Q2-2017,,
 ,CALF CONSTRUCTION,Louth,"2 Slieve Row Crescent, Dundalk",1,Cluid Housing Association,,,,,,Q2-2016
 ,SHIP CONSTRUCTION TURNKEY,Mayo,"Slinaunroe, Clogher (SRD)",1,*N/A,,,,,,Q2-2017
 ,SHIP CONSTRUCTION RAPID,Mayo,"Kilkelly Road, Knock (Phase 3)",4,*N/A,,,,,Q3-2017,
@@ -674,13 +674,13 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Meath,Dunshaughlin,25,*N/A,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Meath,Bettystown (Phase 1),16,*N/A,,,,,,Q3-2017
 ,SHIP CONSTRUCTION,Meath,Farganstown,42,*N/A,"Stage 1 approved in Q1-2018, outline design and costs are now being prepared.",,,,,
-,CAS CONSTRUCTION,Meath,"Blackcastle, Slane Road, Navan",17,Túath Housing Association,,,,,Q4-2017,
-,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath phase 1",10,Túath Housing Association,,,,,,Q1-2018
-,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 2 *",8,Túath Housing Association,,,,,,Q1-2018
-,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 3",6,Túath Housing Association,,,,,Q3-2017,
-,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 4 *",40,Túath Housing Association,,,,,Q3-2017,
-,CALF CONSTRUCTION TURNKEY,Meath,"Fitzherbert Wood, Slane Rd., Navan, Co. Meath",44,Túath Housing Association,,,,Scheme approved for CALF Funding Q3-2017,,
-,CALF CONSTRUCTION TURNKEY,Meath,"Dun Eimear, Bettytown",30,Túath Housing Association,,,,,Q3-2017,
+,CAS CONSTRUCTION,Meath,"Blackcastle, Slane Road, Navan",17,Tï¿½ath Housing Association,,,,,Q4-2017,
+,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath phase 1",10,Tï¿½ath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 2 *",8,Tï¿½ath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 3",6,Tï¿½ath Housing Association,,,,,Q3-2017,
+,CALF CONSTRUCTION TURNKEY,Meath,"Dunville, Athlumney, Co. Meath Phase 4 *",40,Tï¿½ath Housing Association,,,,,Q3-2017,
+,CALF CONSTRUCTION TURNKEY,Meath,"Fitzherbert Wood, Slane Rd., Navan, Co. Meath",44,Tï¿½ath Housing Association,,,,Scheme approved for CALF Funding Q3-2017,,
+,CALF CONSTRUCTION TURNKEY,Meath,"Dun Eimear, Bettytown",30,Tï¿½ath Housing Association,,,,,Q3-2017,
 ,CALF CONSTRUCTION TURNKEY,Meath,"Seabury Lawns, Mornington",25,Cluid Housing Association,,,,,,Q3-2017
 ,CALF CONSTRUCTION TURNKEY,Meath,"Tubberclaire, Navan",23,Cluid Housing Association,,,,,,Q2-2016
 ,CALF CONSTRUCTION TURNKEY,Meath,"Mill Lane, Flower Hill, Navan",20,Oaklee Housing Trust,,,,,,Q1-2016
@@ -688,9 +688,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Meath,Ashbourne area - Phase 3,18,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Meath,Ashbourne area - Phase 2,18,Cluid Housing Association,,,,,,Q4-2017
 ,CALF CONSTRUCTION TURNKEY,Meath,Ashbourne area - Phase 1,11,Cluid Housing Association,,,,,,Q1-2017
-,CALF CONSTRUCTION TURNKEY,Meath,"Blackcastle, Slane Road, Navan",9,Túath Housing Association,,,,,Q3-2017,
-,CALF CONSTRUCTION TURNKEY,Meath,"Churchfields, Ashbourne *",8,Túath Housing Association,,,,,,Q2-2017
-,CALF CONSTRUCTION TURNKEY,Meath,"Grangehall, Dunshaughlin",7,Túath Housing Association,,,,,Q1-2017,
+,CALF CONSTRUCTION TURNKEY,Meath,"Blackcastle, Slane Road, Navan",9,Tï¿½ath Housing Association,,,,,Q3-2017,
+,CALF CONSTRUCTION TURNKEY,Meath,"Churchfields, Ashbourne *",8,Tï¿½ath Housing Association,,,,,,Q2-2017
+,CALF CONSTRUCTION TURNKEY,Meath,"Grangehall, Dunshaughlin",7,Tï¿½ath Housing Association,,,,,Q1-2017,
 ,CALF CONSTRUCTION TURNKEY,Meath,"Seabury Lawns, Mornington",6,Cluid Housing Association,,,,,,Q1-2018
 ,CALF CONSTRUCTION TURNKEY,Meath,"Royal Oaks, Enfield *",4,Cluid Housing Association,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Meath,"27 Ardmore Rise, Bettystown",1,North ? East Housing Association Ltd,,,,,Q1-2017,
@@ -700,7 +700,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Meath,"Commons Road, Navan, Co. Meath",12,Cluid Housing Association,,,,Scheme approved for CALF funding Q1-2018,,
 ,CALF CONSTRUCTION,Meath,"Millrace Court, Emmet Street, Trim, Co Meath ",11,North  East Housing Association Ltd,,,,Scheme approved for CALF funding Q4-2017 ,,
 ,CALF CONSTRUCTION,Meath,"Cherryvalley, Raghmoylan, Co. Meath",9,Cluid Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION,Meath,"Kellets Grove, Dunshauglin, Co Meath *",6,Túath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION,Meath,"Kellets Grove, Dunshauglin, Co Meath *",6,Tï¿½ath Housing Association,,,,,,Q1-2018
 ,SHIP CONSTRUCTION TURNKEY,Monaghan,"Drumbear Wood, Monaghan Town",12,*N/A,,,,,,Q4-2017
 ,SHIP CONSTRUCTION TURNKEY,Monaghan,"Knockroe Glen, Monaghan Town (Phase 3)",6,*N/A,,,,,,Q4-2017
 ,SHIP CONSTRUCTION TURNKEY,Monaghan,"Knockroe Glen, Monaghan Town (Phase 2)",8,*N/A,,,,,,Q2-2017
@@ -720,7 +720,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CAS CONSTRUCTION,Monaghan,"Liseggerton, Clones",16,Oaklee Housing Trust,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Monaghan,"Convent Lands, Carrickmacross",7,Respond,,,,,,Q2-2017
 ,CALF CONSTRUCTION TURNKEY,Monaghan,"Kingscourt Road, Carrickmacross, Co. Monaghan",50,Respond!,,,,,Q3-2017,
-,CALF CONSTRUCTION TURNKEY,Monaghan,"Magheross, Carrickmacross *",33,Túath Housing Association,,,,,Q2-2017,
+,CALF CONSTRUCTION TURNKEY,Monaghan,"Magheross, Carrickmacross *",33,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION,Monaghan,"Liseggerton Road, Clones",6,Oaklee Housing Trust,,,,,Q2-2017,
 ,SHIP CONSTRUCTION TURNKEY,Offaly,"McGregol, Birr",12,*N/A,,,,"Stage 4 approved in Q4-2017, the scheme is now fully approved.",,
 ,SHIP CONSTRUCTION TURNKEY,Offaly,"Mill Race, Ferbane",5,*N/A,,,,,,Q4-2017
@@ -731,11 +731,11 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Offaly,"Kylebeg, Banagher (Phase 2)",18,*N/A,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Offaly,"Blundell Wood, Edenderry",33,*N/A,,,,,Q4-2017,
 ,CAS CONSTRUCTION,Offaly,Mountbolus,4,Mid Offaly Housing Association Ltd,,,"Stage 3 approved in Q4-2017, the scheme is now being tendered.",,,
-,CAS CONSTRUCTION,Offaly,"Killane Drive, Edenderry",2,Túath Housing Association,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
+,CAS CONSTRUCTION,Offaly,"Killane Drive, Edenderry",2,Tï¿½ath Housing Association,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
 ,CAS CONSTRUCTION,Offaly,"Scurragh, Birr",6,Cluid Housing Association,,,"Stage 3 approved in Q1-2018, the scheme is now being tendered.",,,
 ,CAS CONSTRUCTION,Offaly,"Clonminch, Tullamore",20,Oaklee Housing Trust,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
 ,CALF CONSTRUCTION,Offaly,"Kearney's Field, Tullamore",53,Oaklee Housing Trust,,,,Scheme approved for CALF funding Q1-2017,,
-,CALF CONSTRUCTION,Offaly,"Killane Drive, Edenderry",25,Túath Housing Association,,,,Scheme approved for CALF funding Q2-2017,,
+,CALF CONSTRUCTION,Offaly,"Killane Drive, Edenderry",25,Tï¿½ath Housing Association,,,,Scheme approved for CALF funding Q2-2017,,
 ,SHIP CONSTRUCTION TURNKEY,Roscommon,"Monksland, Athlone",10,*N/A,,,,,Q1-2017,
 ,SHIP CONSTRUCTION TURNKEY,Roscommon,"Station Road, Termon, Boyle",10,*N/A,,,,,Q1-2018,
 ,SHIP CONSTRUCTION TURNKEY,Roscommon,"Silveroe Meadows, Boyle",12,*N/A,"Stage 1 approved in Q2-2017, outline design and costs are now being prepared.",,,,,
@@ -771,7 +771,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,South Dublin,St Finians,2,*N/A,,,,,,Q3-2016
 ,SHIP CONSTRUCTION,South Dublin,"Suncroft, Tallaght",10,*N/A,,,,,,Q4-2016
 ,PUBLIC PRIVATE PARTNERSHIP (Bundle 1),South Dublin,Corkage Grange (part of Kilcarbery),109,*N/A,,,Q1 2018,,,
-,CAS CONSTRUCTION,South Dublin,"Collinstown Grove, Clondalkin",4,Túath Housing Association,,,,"Stage 4 approved in Q4-2017, the scheme is now fully approved.",,
+,CAS CONSTRUCTION,South Dublin,"Collinstown Grove, Clondalkin",4,Tï¿½ath Housing Association,,,,"Stage 4 approved in Q4-2017, the scheme is now fully approved.",,
 ,CAS CONSTRUCTION,South Dublin,"Old Nangor Road, Clondalkin",10,Simon Community : Dublin Simon,,,,"Stage 4 approved in Q4-2017, the scheme is now fully approved.",,
 ,CALF CONSTRUCTION TURNKEY,South Dublin,"Elder Heath, Kiltipper Road, Tallaght, Dublin 24 phase 1 *",18,Cluid Housing Association,,,,,,Q1-2018
 ,CALF CONSTRUCTION TURNKEY,South Dublin,"Elder Heath, Kiltipper Road, Tallaght, Dublin 24 phase 2",10,Cluid Housing Association,,,,Scheme approved for CALF Funding Q4-2017,,
@@ -790,8 +790,8 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION,South Dublin,Scholarstown Wood (Apts),6,Circle Voluntary Housing Association,,,,,Q3-2017,
 ,CALF CONSTRUCTION,South Dublin,"Station Road, Clondalkin",5,Respond!,,,,,,Q3-2017
 ,CALF CONSTRUCTION,South Dublin,Scholarstown Wood (Houses) * Phase 1,3,Circle Voluntary Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION,South Dublin,"Tullyhall, Lucan - Phase 1 *",2,Túath Housing Association,,,,,,Q3-2017
-,CALF CONSTRUCTION,South Dublin,"Tullyhall, Lucan - Final Phase*",2,Túath Housing Association,,,,,Q2-2017,
+,CALF CONSTRUCTION,South Dublin,"Tullyhall, Lucan - Phase 1 *",2,Tï¿½ath Housing Association,,,,,,Q3-2017
+,CALF CONSTRUCTION,South Dublin,"Tullyhall, Lucan - Final Phase*",2,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION,South Dublin,"1 Hollyville Terrace, Palmerstown, Dublin",2,Cluid Housing Association,,,,Scheme approved for CALF Funding Q4-2017,,
 ,SHIP CONSTRUCTION,Tipperary,"Ard na Greine, Clonmel",2,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Tipperary,Knockanrawley,28,*N/A,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
@@ -858,9 +858,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Westmeath,Ennell Court (Phase 3),32,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Westmeath,"Cloghanboy, Athlone",10,*N/A,"Stage 1 approved in Q3-2017, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Westmeath,"Bishopsgate, Mullingar",4,*N/A,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
-,CAS CONSTRUCTION,Westmeath,"Farran, Mullingar",4,Túath Housing Association,,"Stage 2 approved in Q2-2017, full design/tender being prepared.",,,,
-,CALF CONSTRUCTION TURNKEY,Westmeath,"Rahanine, Rochfortbridge, Co Westmeath*",12,Túath Housing Association,,,,Scheme approved for CALF funding Q4-2017 ,,
-,CALF CONSTRUCTION TURNKEY,Westmeath,"Cluain Mullen, Castlepollard",2,Túath Housing Association,,,,,,Q2-2017
+,CAS CONSTRUCTION,Westmeath,"Farran, Mullingar",4,Tï¿½ath Housing Association,,"Stage 2 approved in Q2-2017, full design/tender being prepared.",,,,
+,CALF CONSTRUCTION TURNKEY,Westmeath,"Rahanine, Rochfortbridge, Co Westmeath*",12,Tï¿½ath Housing Association,,,,Scheme approved for CALF funding Q4-2017 ,,
+,CALF CONSTRUCTION TURNKEY,Westmeath,"Cluain Mullen, Castlepollard",2,Tï¿½ath Housing Association,,,,,,Q2-2017
 ,SHIP CONSTRUCTION TURNKEY,Wexford,"Madeira Oaks, Wexford",8,*N/A,,,,,,Q3-2017
 ,SHIP CONSTRUCTION TURNKEY,Wexford,"Gleann an Ghairdin (Phase 1), Ballytegan Road, Gorey",8,*N/A,,,,,,Q1-2018
 ,SHIP CONSTRUCTION TURNKEY,Wexford,"Gleann an Ghairdin (Phase 2), Ballytegan Road, Gorey",14,*N/A,,,,,Q1-2018,
@@ -882,7 +882,7 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Wexford,"Clonard, Wexford",26,*N/A,"Stage 1 approved in Q1-2016, outline design and costs are now being prepared.",,,,,
 ,SHIP CONSTRUCTION,Wexford,"Ross Road, Enniscorthy",1,*N/A,,,,"Stage 4 approved in Q1-2018, the scheme is now fully approved.",,
 ,SHIP CONSTRUCTION,Wexford,"Baile Eoghain, Gorey",9,*N/A,,,,,Q4-2017,
-,SHIP CONSTRUCTION,Wexford,"Baile an Tr , Riverchapel (Courtown Ardamine)",10,*N/A,,,,,,Q2-2016
+,SHIP CONSTRUCTION,Wexford,"Baile an Trï¿½, Riverchapel (Courtown Ardamine)",10,*N/A,,,,,,Q2-2016
 ,SHIP CONSTRUCTION,Wexford,"Shanna Court, Coolcotts",8,*N/A,,,,,,Q1-2016
 ,SHIP CONSTRUCTION,Wexford,"Francis Street, Wexford",1,*N/A,,,,,,Q1-2017
 ,SHIP CONSTRUCTION,Wexford,Commodore Barry,1,*N/A,,,,,,Q2-2016
@@ -899,10 +899,10 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,CALF CONSTRUCTION TURNKEY,Wexford,"Hunters Green, Gorey - Phase 2",11,Co operative Ireland,,,,,,Q1-2017
 ,CALF CONSTRUCTION TURNKEY,Wexford,"Ballyboggan, Castlebridge",10,Co-operative Housing Ireland,,,,,Q4-2017,
 ,CALF CONSTRUCTION TURNKEY,Wexford,"Hunters Green, Gorey - Phase 3",9,Co operative Ireland,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Wexford,"Ard Uisce, Whiterock, Wexford*",6,Túath Housing Association,,,,,,Q1-2017
-,CALF CONSTRUCTION TURNKEY,Wexford,"6 units Ard uisce, Whiterock, Wexford ",6,Túath Housing Association,,,,,,Q1-2018
-,CALF CONSTRUCTION TURNKEY,Wexford,"5 units Ard Uisce, Whiterock",5,Túath Housing Association,,,,,,Q4-2017
-,CALF CONSTRUCTION TURNKEY,Wexford,"1 unit Ard Uisce, Whiterock, Wexford",1,Túath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Wexford,"Ard Uisce, Whiterock, Wexford*",6,Tï¿½ath Housing Association,,,,,,Q1-2017
+,CALF CONSTRUCTION TURNKEY,Wexford,"6 units Ard uisce, Whiterock, Wexford ",6,Tï¿½ath Housing Association,,,,,,Q1-2018
+,CALF CONSTRUCTION TURNKEY,Wexford,"5 units Ard Uisce, Whiterock",5,Tï¿½ath Housing Association,,,,,,Q4-2017
+,CALF CONSTRUCTION TURNKEY,Wexford,"1 unit Ard Uisce, Whiterock, Wexford",1,Tï¿½ath Housing Association,,,,,,Q1-2018
 ,CALF CONSTRUCTION,Wexford,Meadowfields ,12,Co operative Ireland,,,,,,Q3-2016
 ,SHIP CONSTRUCTION TURNKEY,Wicklow,"Mill Court, Tinahely",4,*N/A,,"Stage 2 approved in Q1-2018, full design/tender being prepared.",,,,
 ,SHIP CONSTRUCTION,Wicklow,"Emoclew Road, Arklow (Phase 3)",21,*N/A,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
@@ -923,9 +923,9 @@ No.,Funding Programme,Local Authority,Scheme/Project Name,No. of Units,Approved 
 ,SHIP CONSTRUCTION,Wicklow,"Farrankelly, Greystones (Phase 2)",24,*N/A,,"Stage 2 approved in Q4-2017, full design/tender being prepared.",,,,
 ,PUBLIC PRIVATE PARTNERSHIP (Bundle 1),Wicklow,Convent Lands,51,*N/A,,,Q1 2018,,,
 ,CAS CONSTRUCTION,Wicklow,"Lathaleer, Baltinglass",5,KARE Promoting Inclusion for People with Intellectual Disabilities,,"Stage 2 approved in Q3-2017, full design/tender being prepared.",,,,
-,CALF CONSTRUCTION TURNKEY,Wicklow,"Bollarney North, Wicklow Town, Wicklow",32,Túath Housing Association,,,,Scheme approved for CALF Funding Q3-2017,,
-,CALF CONSTRUCTION TURNKEY,Wicklow,"The Meadows, Ballynerrin, Wicklow Town",7,Túath Housing Association,,,,Scheme approved for CALF Funding Q4-2017,,
-,CALF CONSTRUCTION TURNKEY,Wicklow,"Abbey St, Wicklow",6,Túath Housing Association,,,,,Q2-2017,
+,CALF CONSTRUCTION TURNKEY,Wicklow,"Bollarney North, Wicklow Town, Wicklow",32,Tï¿½ath Housing Association,,,,Scheme approved for CALF Funding Q3-2017,,
+,CALF CONSTRUCTION TURNKEY,Wicklow,"The Meadows, Ballynerrin, Wicklow Town",7,Tï¿½ath Housing Association,,,,Scheme approved for CALF Funding Q4-2017,,
+,CALF CONSTRUCTION TURNKEY,Wicklow,"Abbey St, Wicklow",6,Tï¿½ath Housing Association,,,,,Q2-2017,
 ,CALF CONSTRUCTION TURNKEY,Wicklow,"Vale Road, Arklow, Co.  Wicklow",34,Co-operative Housing Ireland,,,,Scheme approved for CALF Funding Q1-2018,,
-,CALF CONSTRUCTION TURNKEY,Wicklow,"Glenheron, Greystones, Co.  Wicklow",5,Túath Housing Association,,,,Scheme approved for CALF Funding Q1-2018,,
+,CALF CONSTRUCTION TURNKEY,Wicklow,"Glenheron, Greystones, Co.  Wicklow",5,Tï¿½ath Housing Association,,,,Scheme approved for CALF Funding Q1-2018,,
 ,CALF CONSTRUCTION,Wicklow,"St Ernan's View, Merrymeeting, Rathnew",45,Cluid Housing Association,,,,Scheme approved for CALF funding Q1-2018 ,,

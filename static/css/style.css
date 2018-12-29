@@ -1,14 +1,30 @@
-#units_per_LA{
-    position:relative;
-    top:40px;
-    left:40px;
+body{
+    background-color:pink;
+    font-size:100px;
 }
 
-section{
+#pie_block_one{
+    position:relative;
+    top:20px;
+}
+
+
+#section_one{
     display:flex;
     flex-direction:row;
+    background-color:yellow;
+    justify-content:flex-start;
+    width:80%;
 }
 
-.pie_block{
+#section_two{
+    display:flex;
     flex-direction:row;
+    background-color:blue;
+    width:80%;
+}
+
+.graph_block{
+    margin-left:15%;
+    
 }

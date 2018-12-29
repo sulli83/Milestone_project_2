@@ -15,7 +15,7 @@
                 .dimension(name_dim)
                 .group(total_number_of_units);
             
-            
+         
             var FP_dim = ndx.dimension(dc.pluck('Funding Programme'));
             var total_units_per_FP = FP_dim.group().reduceSum(dc.pluck('No. of Units'));
             dc.pieChart('#per-store-chart')
