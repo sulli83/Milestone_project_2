@@ -24,6 +24,7 @@
 </head>
 
 
+
 <body>
   <container>
   
@@ -65,12 +66,12 @@
     
   <div class = "col-md-4 my-4">
     <h3>Units Per Approved Housing Body</h3>
-    <div id="number_of_units_per_housing_body"></div>
+    <div id="AHB_rowChart"></div>
   </div>
   
   <div>
     <h3></h3>
-    <div id="bar-chart">
+    <div id="LA_rowChart">
       
     </div>
   </div>
@@ -96,7 +97,7 @@
             var LA_dim = ndx.dimension(dc.pluck('LA'));
             var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_LA')
-                .height(700)
+                .height(400)
                 .radius(300)
                 .transitionDuration(1500)
                 .dimension(LA_dim)
@@ -105,81 +106,95 @@
             var funding_programme_dim = ndx.dimension(dc.pluck('Funding Programme'));
             var total_number_of_units_per_funding_programme = funding_programme_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_funding_programme')
-                .height(700)
+                .height(400)
                 .radius(300)
                 .transitionDuration(1500)
                 .dimension(funding_programme_dim)
                 .group(total_number_of_units_per_funding_programme);
             
-            var approved_housing_body_dim = ndx.dimension(dc.pluck('Approved Housing Body'));
-            var total_number_of_units_per_housing_body = approved_housing_body_dim.group().reduceSum(dc.pluck('Units'));
-            dc.pieChart('#number_of_units_per_housing_body')
-                .height(700)
-                .radius(300)
-                .transitionDuration(1500)
-                .dimension(approved_housing_body_dim)
-                .group(total_number_of_units_per_housing_body);
+     
                 
           var size_dimension = ndx.dimension(function (d) {
             if (d.Units > 100)
                 return "Large development";
+            else if (d.Units > 50)
+                return "Medium development";
             else
                 return "Small development"
         });
+        
+        var devSizeColors = d3.scale.ordinal()
+        .domain(["Large Development","Medium Development","Small Development"])
+        .range(["red", "orange", "blue"]);
+        
         var size_group = size_dimension.group();
         dc.pieChart('#pie-chart')
-            .height(700)
-            .radius(300)
+            .height(650)
+             .transitionDuration(500)
+            .radius(600)
+            .colors(devSizeColors)
             .dimension(size_dimension)
             .group(size_group);
             
              var size_dimension = ndx.dimension(function (d) {
             if (d.Units > 50)
-                return "Large development";
+                return "Large and medium development";
             else
-                return "Medium development"
+                return "Small development"
         });
         var size_group = size_dimension.group();
         dc.pieChart('#pie-chart-2')
-            .height(700)
+            .height(400)
             .radius(300)
             .dimension(size_dimension)
             .group(size_group);
-            /*
-            var state_dim = ndx.dimension(dc.pluck('state'));
-            var total_spend_per_state = name_dim.group().reduceSum(dc.pluck('spend'));
-            dc.pieChart('#per-state-chart')
-                .height(330)
-                .radius(90)
-                .transitionDuration(1500)
-                .dimension(name_dim)
-                .group(total_spend_per_state);
-            */
+   
             
-        var name_dim = ndx.dimension(dc.pluck('Completed'));
+        var name_dim = ndx.dimension(dc.pluck('LA'));
         var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('Units'));
-        dc.barChart("#per-person-chart")
-            .width(700)
-            .height(1000)
+        dc.rowChart("#LA_rowChart")
+            .width(800)
+            .height(2000)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(name_dim)
             .group(total_spend_per_person)
             .transitionDuration(500)
             .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .xAxisLabel("Units")
-            .yAxis().ticks(10);
+            /*.xUnits(dc.units.ordinal)*/
+            /*.xAxisLabel("Units")*/
+            .elasticX(true)
+            .xAxis().ticks(10);
             
-        var name_dim = ndx.dimension(dc.pluck('Completed'));
-        var total_spend_by_person = name_dim.group().reduceSum(dc.pluck('Units'));
-        var total_chart = dc.barChart('#bar-chart');
-        total_chart
+         
+          var name_dim = ndx.dimension(dc.pluck('Approved Housing Body'));
+        var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('Units'));
+        dc.rowChart("#AHB_rowChart")
+            .width(800)
+            .height(2000)
+            .margins({top: 10, right: 50, bottom: 30, left: 50})
+            .dimension(name_dim)
+            .group(total_spend_per_person)
+            .transitionDuration(500)
+            .x(d3.scale.ordinal())
+            /*.xUnits(dc.units.ordinal)*/
+            /*.xAxisLabel("Units")*/
+            .elasticX(true)
+            .xAxis().ticks(10);
+            
+            
+         
+        var completion_date = ndx.dimension(dc.pluck('Completed'));
+        var total_units = name_dim.group().reduceSum(dc.pluck('Units'));
+        var completion_target = dc.rowChart('#bar-chart');
+        completion_target
             .width(500)
             .height(300)
-            .dimension(name_dim)
-            .group(total_spend_by_person)
+            .dimension(completion_date)
+            .group(total_units)
             .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal);
+            ;
+            
+        
             
             
             dc.renderAll();

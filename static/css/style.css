@@ -28,3 +28,11 @@ body{
     margin-left:15%;
     
 }
+
+ #pie-chart{
+    fill:orange;
+}
+
+#pie-chart-2{
+    fill:blue
+}
