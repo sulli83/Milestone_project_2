@@ -1,98 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gender In Academia</title>
-    
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="/static/css/dc.min.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
-    
-    
-    <script type="text/javascript" src="/static/js/d3.min.js"></script>
-    <script type="text/javascript" src="/static/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="/static/js/dc.min.js"></script>
-    <script type="text/javascript" src="/static/js/queue.min.js"></script>
-   <!-- <script type="text/javascript" src="/static/js/graph.js"></script>-->
-
-  
-    
-
-</head>
-
-
-
-<body>
-  <container>
-  
-    <h1>
-      Social Housing Construction Q1 2017
-    </h1>
-    
-    <div class="row graph_block"> 
-    <div class = "col-md-4 my-4">
-        <h3>Total Number Of Units Per Local Authority</h3>
-        <div id="number_of_units_per_LA"></div>
-    </div>
-    
-    <div class="col-md-4 my-4">
-        <h3>Total Number Of Units Per Funding Programme</h3>
-        <div id="number_of_units_per_funding_programme"></div>
-    </div>
-    <!--closing of row-->
-    </div>
-    <div class = "row graph_block">
-    <div class = "col-md-4 my-4">
-        <h3>Developments with over 50 units</h3>
-        <div id="pie-chart-2"></div>
-    </div>
-    
-    <div class = "col-md-4 my-4">
-      <h3>Developments with over 100 units</h3>
-      <div id="pie-chart"></div>
-    </div>
-    <!--closing of row-->
-    </div>
-    
-    <div class = "col-md-4 my-4">
-      <h3>When units to be completed</h3>
-      <div id="per-person-chart"></div>
-    </div>
-    
-    
-    
-  <div class = "col-md-4 my-4">
-    <h3>Units Per Approved Housing Body</h3>
-    <div id="AHB_rowChart"></div>
-  </div>
-  
-  <div>
-    <h3></h3>
-    <div id="LA_rowChart">
-      
-    </div>
-  </div>
-    
-    
-    <!--
-    <div id="chart-here">
-      This is where chart should appear
-    </div>
-    -->
-    </container>
-    
-     <script>
-     
-        queue()
-            .defer(d3.csv, "/housing_data/Social Housing Construction Status Report Q1 2017.csv")
+ queue()
+            .defer(d3.csv, "/housing_data/Social Housing Construction Status Report Q1 2018.csv")
             .await(makeGraphs);
         
         function makeGraphs(error, housingData) {
             var ndx = crossfilter(housingData);
             
+            
+          
             
             var LA_dim = ndx.dimension(dc.pluck('LA'));
             var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
@@ -111,16 +25,21 @@
                 .transitionDuration(1500)
                 .dimension(funding_programme_dim)
                 .group(total_number_of_units_per_funding_programme);
-            
+                
+           
      
                 
           var size_dimension = ndx.dimension(function (d) {
             if (d.Units > 100)
                 return "Large development";
             else if (d.Units > 50)
+                return "Large/Medium development";
+            else if (d.Units > 25)
                 return "Medium development";
+            else if (d.Units > 10)
+                return "Small development";
             else
-                return "Small development"
+                return "Very small development";
         });
         
         var devSizeColors = d3.scale.ordinal()
@@ -185,14 +104,20 @@
          
         var completion_date = ndx.dimension(dc.pluck('Completed'));
         var total_units = name_dim.group().reduceSum(dc.pluck('Units'));
-        var completion_target = dc.rowChart('#bar-chart');
-        completion_target
-            .width(500)
-            .height(300)
+        dc.rowChart('#completed_rowChart')
+            .width(800)
+            .height(2000)
+            .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(completion_date)
             .group(total_units)
+            .transitionDuration(500)
             .x(d3.scale.ordinal())
-            ;
+            /*.xUnits(dc.units.ordinal)*/
+            /*.xAxisLabel("Units")*/
+            .elasticX(true)
+            .xAxis().ticks(10);
+            
+          
             
         
             
@@ -200,11 +125,3 @@
             dc.renderAll();
         } 
         
-    </script>
-    
-    
-    
-    
-   
-</body>
-</html>

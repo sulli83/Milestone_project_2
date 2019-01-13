@@ -1,6 +1,26 @@
 body{
     background-color:pink;
     font-size:100px;
+    color:black;
+
+}
+
+navbar{
+    background-color:yellow;
+    height:200px;
+}
+
+h1{
+    background-color:black;
+    color:#ccc;
+    margin-left:20%;
+    padding-left:5%;
+    max-width:60%;
+    border-radius:5%;
+}
+
+.pie_chart{
+    padding:10px;
 }
 
 #pie_block_one{

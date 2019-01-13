@@ -1,7 +1,101 @@
-  queue()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gender In Academia</title>
+    
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/static/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+    
+    
+    <script type="text/javascript" src="/static/js/d3.min.js"></script>
+    <script type="text/javascript" src="/static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="/static/js/dc.min.js"></script>
+    <script type="text/javascript" src="/static/js/queue.min.js"></script>
+   <!-- <script type="text/javascript" src="/static/js/graph.js"></script>-->
+
+  
+    
+
+</head>
+
+
+
+<body>
+  <container>
+  
+    <h1>
+      Social Housing Construction Q1 2018
+    </h1>
+    
+    <div class="row graph_block"> 
+    <div class = "col-md-4 my-4 pie_graph">
+        <h3>Total Number Of Units Per Local Authority</h3>
+        <div id="number_of_units_per_LA"></div>
+    </div>
+    
+    <div class="col-md-4 my-4 pie_graph">
+        <h3>Total Number Of Units Per Funding Programme</h3>
+        <div id="number_of_units_per_funding_programme"></div>
+    </div>
+    <!--closing of row-->
+    </div>
+    <div class = "row graph_block">
+    <div class = "col-md-4 my-4 pie_graph">
+        <h3>Developments with over 50 units</h3>
+        <div id="pie-chart-2"></div>
+    </div>
+    
+    <div class = "col-md-4 my-4 pie_graph">
+      <h3>Developments with over 100 units</h3>
+      <div id="pie-chart"></div>
+    </div>
+    <!--closing of row-->
+    </div>
+    
+    <div class = "col-md-4 my-4">
+      <h3>When units to be completed</h3>
+      <div id="per-person-chart"></div>
+    </div>
+    
+    
+    
+  <div class = "col-md-4 my-4">
+    <h3>Units Per Approved Housing Body</h3>
+    <div id="AHB_rowChart"></div>
+  </div>
+  
+  <div>
+    <h3>Local Authority Row Chart</h3>
+    <div id="LA_rowChart">
+      
+    </div>
+  </div>
+  
+  <div>
+      <h3>Completed Row Chart</h3>
+      <div id="completed_rowChart">
+          
+      </div>
+  </div>
+    
+    
+    <!--
+    <div id="chart-here">
+      This is where chart should appear
+    </div>
+    -->
+    </container>
+    
+     <script>
+     
+        queue()
             .defer(d3.csv, "/housing_data/Social Housing Construction Status Report Q1 2018.csv")
-            .defer(d3.json, "/housing_data/esb_connections.json")
-            .await(makeGraphs, makeGraphs_2);
+            .await(makeGraphs);
         
         function makeGraphs(error, housingData) {
             var ndx = crossfilter(housingData);
@@ -118,94 +212,6 @@
             .elasticX(true)
             .xAxis().ticks(10);
             
-        function makeGraphs_2(error, esb_connectionsData) {
-        var ndx = crossfilter(esb_connectionsData);
-        
-        var parseDate = d3.time.format("%Y").parse;
-        esb_connectionsData.forEach(function(d){
-            d.date = parseDate(d.date);
-        });
-        
-        var date_dim = ndx.dimension(dc.pluck('date'));
-        var minDate = date_dim.bottom(1)[0].date;
-        var maxDate = date_dim.top(1)[0].date;
-        function units_by_owner(owner) {
-            return function(d) {
-                if (d.owner === owner) {
-                    return +d.units;
-                } else {
-                    return 0;
-                }
-            }
-        }
-        var PrivateUnitsByDate = date_dim.group().reduceSum(units_by_owner('Private'));
-        var SocialUnitsByDate = date_dim.group().reduceSum(units_by_owner('Social'));
-        
-       
-        var compositeChart = dc.compositeChart('#esb-composite-chart');
-        compositeChart
-            .width(990)
-            .height(200)
-            .dimension(date_dim)
-            .x(d3.time.scale().domain([minDate, maxDate]))
-            .yAxisLabel("units")
-            .xAxisLabel("date")
-            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-            .renderHorizontalGridLines(true)
-            .compose([
-                dc.lineChart(compositeChart)
-                    .colors('green')
-                    .group(PrivateUnitsByDate, 'Private'),
-                dc.lineChart(compositeChart)
-                    .colors('red')
-                    .group(SocialUnitsByDate, 'Social')
-               ])
-            .brushOn(false)
-            .render();
-            
-        /*functions and variables for private and social houses*/
-        
-        
-        var date_dim = ndx.dimension(dc.pluck('date'));
-        var minDate = date_dim.bottom(1)[0].date;
-        var maxDate = date_dim.top(1)[0].date;
-        function units_by_name(name) {
-            return function(d) {
-                if (d.name === name) {
-                    return +d.units;
-                } else {
-                    return 0;
-                }
-            }
-        }
-        var LAunitsByDate = date_dim.group().reduceSum(units_by_name('LA'));
-        var SocunitsByDate = date_dim.group().reduceSum(units_by_name('Soc'));
-        
-        var PrivunitsByDate = date_dim.group().reduceSum(units_by_name('Priv'));
-        var compositeChart = dc.compositeChart('#composite-chart-1');
-        compositeChart
-            .width(990)
-            .height(200)
-            .dimension(date_dim)
-            .x(d3.time.scale().domain([minDate, maxDate]))
-            .yAxisLabel("units")
-            .xAxisLabel("date")
-            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-            .renderHorizontalGridLines(true)
-            .compose([
-                dc.lineChart(compositeChart)
-                    .colors('green')
-                    .group(LAunitsByDate, 'SocialHousing - Local Authority'),
-                dc.lineChart(compositeChart)
-                    .colors('red')
-                    .group(SocunitsByDate, 'Social Housing - Voluntary & Co-operative Housing'),
-                dc.lineChart(compositeChart)
-                    .colors('blue')
-                    .group(PrivunitsByDate, 'Private Ownership')
-            ])
-            .brushOn(false)
-            .render();
-            
           
             
         
@@ -213,3 +219,12 @@
             
             dc.renderAll();
         } 
+        
+    </script>
+    
+    
+    
+    
+   
+</body>
+</html>
