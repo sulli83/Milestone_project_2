@@ -27,62 +27,80 @@
 
 <body>
   <container>
-  
+     <div id="heading_para">
     <h1>
-      Social Housing Construction Q1 2018
+      Social Housing Construction for quarter 1 - 2018
     </h1>
-    
-    <div class="row graph_block"> 
+    <p>
+    This project an analysis of 
+    </p>
+    <!--closing of heading div-->
+    </div>
+    <div class="graph_block">
     <div class = "col-md-4 my-4 pie_graph">
         <h3>Total Number Of Units Per Local Authority</h3>
+        <p>This pie-chart shows possibly a disproportinately small number of social housing units being built in Dublin.
+        In light of the increased population density of the area.</p>
         <div id="number_of_units_per_LA"></div>
+        <!--closing pie_graph grid-->
     </div>
     
     <div class="col-md-4 my-4 pie_graph">
         <h3>Total Number Of Units Per Funding Programme</h3>
+        <p>Local Authority direct provision: Local Authorities are directly providing housing to people on the social housing list.
+        However, there has been limited delivery of new social housing at scale by Local Authorities in recent years when compared 
+        to historic volumes provided in this way.
+        
+        AHB direct provision: Much of the social housing stock in Ireland is provided by Approved Housing Bodies, regulated
+        by the Housing Agency and the Charities Regulator. While the Approved Housing Bodies have been adding to their stock (including through developments on sites provided by NAMA through the NARPs scheme or financed under the CALF and CAS schemes), the overall volumes being added and the scale of the Irish AHB sector is relatively modest compared to the overall need cited above.</p>
         <div id="number_of_units_per_funding_programme"></div>
+    <!--closing pie-graph div-->
     </div>
-    <!--closing of row-->
-    </div>
-    <div class = "row graph_block">
+    
+   <!--
     <div class = "col-md-4 my-4 pie_graph">
+        
         <h3>Developments with over 50 units</h3>
         <div id="pie-chart-2"></div>
     </div>
-    
+    -->
     <div class = "col-md-4 my-4 pie_graph">
-      <h3>Developments with over 100 units</h3>
+      <h3>Numbers of Units in Social Housing Developments</h3>
+      <p>The lack of larger scale developments signal an ideological shift from government away from
+      large scale social housing development. This suggests an negative opinion of such development due 
+      to perceived social issues.</p>
       <div id="pie-chart"></div>
     </div>
-    <!--closing of row-->
-    </div>
     
-    <div class = "col-md-4 my-4">
-      <h3>When units to be completed</h3>
-      <div id="per-person-chart"></div>
+    <!--closing of graph_block-->
     </div>
     
     
     
+  <div class="row_chart_block"> 
   <div class = "col-md-4 my-4">
-    <h3>Units Per Approved Housing Body</h3>
+    <h3>Units Per Approved Housing Body - List Bar Chart list the approved housing bodies along with 
+    the number of units which they are currently constructing. The number of AHB may indicate a convoluted
+    process involved in delivering social homes to house who are in need.</h3>
     <div id="AHB_rowChart"></div>
   </div>
   
   <div>
     <h3>Local Authority Row Chart</h3>
+    Bar Chart displaying the same data as can be seen in the first pie graph.
     <div id="LA_rowChart">
-      
     </div>
   </div>
-  
+  <!--clsoing row-chart-->
+  </div>
+  <!--
   <div>
       <h3>Completed Row Chart</h3>
       <div id="completed_rowChart">
           
       </div>
   </div>
-    
+    -->
     
     <!--
     <div id="chart-here">
@@ -102,16 +120,17 @@
             
             
           
-            
+            /*piechart for Local Authority and units*/
             var LA_dim = ndx.dimension(dc.pluck('LA'));
             var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_LA')
-                .height(400)
-                .radius(300)
+                .height(700)
+                .radius(1000)
                 .transitionDuration(1500)
                 .dimension(LA_dim)
                 .group(total_number_of_units);
             
+            /*piechart for funding programme information*/
             var funding_programme_dim = ndx.dimension(dc.pluck('Funding Programme'));
             var total_number_of_units_per_funding_programme = funding_programme_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_funding_programme')
@@ -123,23 +142,24 @@
                 
            
      
-                
+          /*size of developments */      
           var size_dimension = ndx.dimension(function (d) {
             if (d.Units > 100)
-                return "Large development";
+                return "Large development (100+ Units)";
             else if (d.Units > 50)
-                return "Large/Medium development";
+                return "Large/Medium development (100-50 Units)";
             else if (d.Units > 25)
-                return "Medium development";
+                return "Medium development (50-25 Units)";
             else if (d.Units > 10)
-                return "Small development";
+                return "Small development (25-10 Units)";
             else
-                return "Very small development";
+                return "Very small development (Under 10 Units)";
         });
         
         var devSizeColors = d3.scale.ordinal()
-        .domain(["Large Development","Medium Development","Small Development"])
-        .range(["red", "orange", "blue"]);
+        .domain(["Large development (100+ Units)","Large/Medium development (100-50 Units)","Medium development (50-25 Units)",
+        "Small development (25-10 Units),Very small development (Under 10 Units)"])
+        .range(["red", "orange", "blue","pink","yellow"]);
         
         var size_group = size_dimension.group();
         dc.pieChart('#pie-chart')
@@ -150,7 +170,7 @@
             .dimension(size_dimension)
             .group(size_group);
             
-             var size_dimension = ndx.dimension(function (d) {
+          /*   var size_dimension = ndx.dimension(function (d) {
             if (d.Units > 50)
                 return "Large and medium development";
             else
@@ -162,49 +182,35 @@
             .radius(300)
             .dimension(size_dimension)
             .group(size_group);
-   
+   */
+    
             
-        var name_dim = ndx.dimension(dc.pluck('LA'));
-        var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('Units'));
-        dc.rowChart("#LA_rowChart")
-            .width(800)
-            .height(2000)
-            .margins({top: 10, right: 50, bottom: 30, left: 50})
-            .dimension(name_dim)
-            .group(total_spend_per_person)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            /*.xUnits(dc.units.ordinal)*/
-            /*.xAxisLabel("Units")*/
-            .elasticX(true)
-            .xAxis().ticks(10);
-            
-         
-          var name_dim = ndx.dimension(dc.pluck('Approved Housing Body'));
-        var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('Units'));
+        /*barchart for AHB Bar Chart*/ 
+        var name_dim = ndx.dimension(dc.pluck('Approved Housing Body'));
+        var total_units_per_local_authority = name_dim.group().reduceSum(dc.pluck('Units'));
         dc.rowChart("#AHB_rowChart")
             .width(800)
             .height(2000)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(name_dim)
-            .group(total_spend_per_person)
+            .group(total_units_per_local_authority)
             .transitionDuration(500)
             .x(d3.scale.ordinal())
             /*.xUnits(dc.units.ordinal)*/
             /*.xAxisLabel("Units")*/
             .elasticX(true)
             .xAxis().ticks(10);
-            
-            
          
-        var completion_date = ndx.dimension(dc.pluck('Completed'));
-        var total_units = name_dim.group().reduceSum(dc.pluck('Units'));
-        dc.rowChart('#completed_rowChart')
+         
+         /*java script for Local Authority Bar Chart information.*/   
+        var name_dim = ndx.dimension(dc.pluck('LA'));
+        var total_units_per_local_authority = name_dim.group().reduceSum(dc.pluck('Units'));
+        dc.rowChart("#LA_rowChart")
             .width(800)
             .height(2000)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
-            .dimension(completion_date)
-            .group(total_units)
+            .dimension(name_dim)
+            .group(total_units_per_local_authority)
             .transitionDuration(500)
             .x(d3.scale.ordinal())
             /*.xUnits(dc.units.ordinal)*/
@@ -212,8 +218,9 @@
             .elasticX(true)
             .xAxis().ticks(10);
             
-          
             
+            
+      
         
             
             
