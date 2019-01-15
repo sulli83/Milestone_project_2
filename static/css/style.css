@@ -24,9 +24,11 @@ h3{
     background-color:red;
 }
 
-.pie_chart{
-    padding:10px;
+.pie_graph{
+    display:flex;
+    flex-direction:column;
 }
+
 
 .line_charts{
     margin-left:2px;
@@ -36,6 +38,15 @@ h3{
 
 p{
     font-size:10px;
+}
+
+.charts{
+    color:black;
+}
+
+.body_text{
+    min-height:200px;
+    background-color:blue;
 }
 
 
@@ -61,5 +72,6 @@ p{
 
 .row_chart_block{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:space-around;
 }
