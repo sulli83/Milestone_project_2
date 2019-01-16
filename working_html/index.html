@@ -47,7 +47,7 @@
         In light of the increased population density of the area.</p>
         <!--closing body_text-->
         </div>
-        <div id="number_of_units_per_LA"></div>
+        <div id="number_of_units_per_LA" class="charts"></div>
         <!--closing pie_graph grid-->
     </div>
     
@@ -137,7 +137,8 @@
             var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_LA')
                 .height(400)
-                .radius(300)
+                .radius(200)
+                .innerRadius(50)
                 .transitionDuration(1500)
                 .dimension(LA_dim)
                 .group(total_number_of_units);
@@ -147,7 +148,8 @@
             var total_number_of_units_per_funding_programme = funding_programme_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_funding_programme')
                 .height(400)
-                .radius(300)
+                .radius(200)
+                .innerRadius(50)
                 .transitionDuration(1500)
                 .dimension(funding_programme_dim)
                 .group(total_number_of_units_per_funding_programme);
@@ -170,14 +172,15 @@
         
         var devSizeColors = d3.scale.ordinal()
         .domain(["Large development (100+ Units)","Large/Medium development (100-50 Units)","Medium development (50-25 Units)",
-        "Small development (25-10 Units),Very small development (Under 10 Units)"])
-        .range(["red", "orange", "blue","pink","yellow"]);
+        "Small development (25-10 Units)","Very small development (Under 10 Units)"])
+        .range(["red", "orange", "blue","green","yellow"]);
         
         var size_group = size_dimension.group();
         dc.pieChart('#pie-chart')
             .height(400)
              .transitionDuration(500)
-            .radius(400)
+            .radius(200)
+            .innerRadius(50)
             .colors(devSizeColors)
             .dimension(size_dimension)
             .group(size_group);
@@ -230,7 +233,7 @@
             .elasticX(true)
             .xAxis().ticks(10);
             
-            
+          
             
       
         

@@ -67,6 +67,11 @@
         <div id="composite-chart-1" class="line_charts"></div>
     </div>
     
+    <div>
+        <h3>Stacked Bar Chart</h3>
+        <div id="stacked-chart"></div>
+    </div>
+    
 
     <script>
     /*template for beginning of d3 graph block*/
@@ -161,6 +166,39 @@
             ])
             .brushOn(false)
             .render();
+            
+         var name_dim = ndx.dimension(dc.pluck('owner'));
+
+        var unitsByFpDub = name_dim.group().reduceSum(function (d) {
+            if (d.owner === 'Private') {
+                return +d.units;
+            } else {
+                return 0;
+            }
+        });
+
+        var unitsByFpCor = name_dim.group().reduceSum(function (d) {
+            if (d.owner === 'Social') {
+                return +d.units;
+            } else {
+                return 0;
+            }
+        });
+
+        var stackedChart = dc.barChart("#stacked-chart");
+        stackedChart
+            .width(800)
+            .height(500)
+            .dimension(name_dim)
+            .group(unitsByFpDub, "Private")
+            .stack(unitsByFpCor, "Social")
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
+
+        stackedChart.margins().right = 100;
+            
+        
    
         
         dc.renderAll();

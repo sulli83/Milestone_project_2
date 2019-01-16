@@ -1,5 +1,5 @@
 body{
-    background-color:pink;
+    background-color:white;
     font-size:100px;
     color:black;
 
@@ -42,6 +42,7 @@ p{
 
 .charts{
     color:black;
+    width:50%;
 }
 
 .body_text{
