@@ -68,8 +68,8 @@
     </div>
     
     <div>
-        <h3>Stacked Bar Chart</h3>
-        <div id="stacked-chart"></div>
+        <h3>Bar Chart</h3>
+        <div id="bar-chart"></div>
     </div>
     
 
@@ -166,7 +166,9 @@
             ])
             .brushOn(false)
             .render();
-            
+         
+         
+         /*code for bar chart*/ 
          var name_dim = ndx.dimension(dc.pluck('owner'));
 
         var unitsByFpDub = name_dim.group().reduceSum(function (d) {
@@ -185,7 +187,7 @@
             }
         });
 
-        var stackedChart = dc.barChart("#stacked-chart");
+        var stackedChart = dc.barChart("#bar-chart");
         stackedChart
             .width(800)
             .height(500)

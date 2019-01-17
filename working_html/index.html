@@ -137,7 +137,7 @@
             var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_LA')
                 .height(400)
-                .radius(200)
+                .radius(300)
                 .innerRadius(50)
                 .transitionDuration(1500)
                 .dimension(LA_dim)
@@ -148,7 +148,7 @@
             var total_number_of_units_per_funding_programme = funding_programme_dim.group().reduceSum(dc.pluck('Units'));
             dc.pieChart('#number_of_units_per_funding_programme')
                 .height(400)
-                .radius(200)
+                .radius(300)
                 .innerRadius(50)
                 .transitionDuration(1500)
                 .dimension(funding_programme_dim)
@@ -179,7 +179,7 @@
         dc.pieChart('#pie-chart')
             .height(400)
              .transitionDuration(500)
-            .radius(200)
+            .radius(300)
             .innerRadius(50)
             .colors(devSizeColors)
             .dimension(size_dimension)
