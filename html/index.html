@@ -105,6 +105,34 @@
   </div>
   <!--clsoing row-chart-->
   </div>
+  <div>
+       <h1>Data Visualisation 1972-2015</h1>
+
+    <h2>DC LineChart</h2>
+
+    <div>
+        <h3>ESB Connections 1972-2015</h3>
+        <h3>Local Authority Connections compared to Private Ownership</h3>
+        <p>This graph clearly highlight a lack of adequate response to the need for social housing ESB connections since the 90's.
+        The data for social house can be seen fluctuate in tandem with the data for private housing figures.
+        More recently the figure for private houses have begun to increases again quite rapidly since the 
+        end of the recession which isn't the case social housing units.This would suggest a reluctance inn policy
+        or ideological opposition to such developments. ESB connections in both fields can be seen to reduce to a very minimal
+        percentage of those in the Private House connections.</p>
+        <div id="composite-chart" class="line_charts"></div>
+    </div>
+    
+    <div>
+        <h3>ESB Connections 1972-2015</h3>
+        <h3>Local Authority, Social and Voluntary again compared with Private Ownership connections</h3>
+        <div id="composite-chart-1" class="line_charts"></div>
+    </div>
+    
+    <div>
+        <h3>Bar Chart</h3>
+        <div id="bar-chart"></div>
+    </div>
+  </div>
   <!--
   <div>
       <h3>Completed Row Chart</h3>
@@ -124,10 +152,17 @@
      <script>
      
         queue()
-            .defer(d3.csv, "/housing_data/Social Housing Construction Status Report Q1 2018.csv")
-            .await(makeGraphs);
+            .defer(d3.csv, "/housing_data/soc_housing.csv")
+            .await(makeSocialGraphs);
+            
+            
+          queue()
+            .defer(d3.json, "/housing_data/esb_connections.json")
+            .await(makeEsbGraphs);
         
-        function makeGraphs(error, housingData) {
+        
+        
+        function makeSocialGraphs(error, housingData) {
             var ndx = crossfilter(housingData);
             
             
@@ -232,15 +267,139 @@
             /*.xAxisLabel("Units")*/
             .elasticX(true)
             .xAxis().ticks(10);
-            
-          
-            
-      
-        
+         
             
             
             dc.renderAll();
-        } 
+            
+            function makeEsbGraphs(error, esb_connectionsData) {
+        var ndx = crossfilter(esb_connectionsData);
+        
+        var parseDate = d3.time.format("%Y").parse;
+        esb_connectionsData.forEach(function(d){
+            d.date = parseDate(d.date);
+        });
+        
+        var date_dim = ndx.dimension(dc.pluck('date'));
+        var minDate = date_dim.bottom(1)[0].date;
+        var maxDate = date_dim.top(1)[0].date;
+        function units_by_owner(owner) {
+            return function(d) {
+                if (d.owner === owner) {
+                    return +d.units;
+                } else {
+                    return 0;
+                }
+            }
+        }
+        var PrivateUnitsByDate = date_dim.group().reduceSum(units_by_owner('Private'));
+        var SocialUnitsByDate = date_dim.group().reduceSum(units_by_owner('Social'));
+        
+       
+        var compositeChart = dc.compositeChart('#composite-chart');
+        compositeChart
+            .width(990)
+            .height(200)
+            .dimension(date_dim)
+            .x(d3.time.scale().domain([minDate, maxDate]))
+            .yAxisLabel("units")
+            .xAxisLabel("date")
+            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+            .renderHorizontalGridLines(true)
+            .compose([
+                dc.lineChart(compositeChart)
+                    .colors('green')
+                    .group(PrivateUnitsByDate, 'Private'),
+                dc.lineChart(compositeChart)
+                    .colors('red')
+                    .group(SocialUnitsByDate, 'Social')
+               ])
+            .brushOn(false)
+            .render();
+            
+        /*functions and variables for private and social houses*/
+        
+        
+        var date_dim = ndx.dimension(dc.pluck('date'));
+        var minDate = date_dim.bottom(1)[0].date;
+        var maxDate = date_dim.top(1)[0].date;
+        function units_by_name(name) {
+            return function(d) {
+                if (d.name === name) {
+                    return +d.units;
+                } else {
+                    return 0;
+                }
+            }
+        }
+        var LAunitsByDate = date_dim.group().reduceSum(units_by_name('LA'));
+        var SocunitsByDate = date_dim.group().reduceSum(units_by_name('Soc'));
+        
+        var PrivunitsByDate = date_dim.group().reduceSum(units_by_name('Priv'));
+        var compositeChart = dc.compositeChart('#composite-chart-1');
+        compositeChart
+            .width(990)
+            .height(200)
+            .dimension(date_dim)
+            .x(d3.time.scale().domain([minDate, maxDate]))
+            .yAxisLabel("units")
+            .xAxisLabel("date")
+            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+            .renderHorizontalGridLines(true)
+            .compose([
+                dc.lineChart(compositeChart)
+                    .colors('green')
+                    .group(LAunitsByDate, 'SocialHousing - Local Authority'),
+                dc.lineChart(compositeChart)
+                    .colors('red')
+                    .group(SocunitsByDate, 'Social Housing - Voluntary & Co-operative Housing'),
+                dc.lineChart(compositeChart)
+                    .colors('blue')
+                    .group(PrivunitsByDate, 'Private Ownership')
+            ])
+            .brushOn(false)
+            .render();
+         
+         
+         /*code for bar chart*/ 
+         var name_dim = ndx.dimension(dc.pluck('owner'));
+
+        var unitsByFpDub = name_dim.group().reduceSum(function (d) {
+            if (d.owner === 'Private') {
+                return +d.units;
+            } else {
+                return 0;
+            }
+        });
+
+        var unitsByFpCor = name_dim.group().reduceSum(function (d) {
+            if (d.owner === 'Social') {
+                return +d.units;
+            } else {
+                return 0;
+            }
+        });
+
+        var stackedChart = dc.barChart("#bar-chart");
+        stackedChart
+            .width(800)
+            .height(500)
+            .dimension(name_dim)
+            .group(unitsByFpDub, "Private")
+            .stack(unitsByFpCor, "Social")
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
+
+        stackedChart.margins().right = 100;
+            
+        
+   
+        
+        dc.renderAll();
+    }
+    
+        }
         
     </script>
     

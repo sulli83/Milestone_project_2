@@ -78,8 +78,10 @@
     
     queue()
         .defer(d3.json, "/housing_data/esb_connections.json")
-        .await(makeGraphs);
-    function makeGraphs(error, esb_connectionsData) {
+        .await(makeESBGraphs);
+    
+    
+    function makeESBGraphs(error, esb_connectionsData) {
         var ndx = crossfilter(esb_connectionsData);
         
         var parseDate = d3.time.format("%Y").parse;
