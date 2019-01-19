@@ -16,7 +16,7 @@
     <script type="text/javascript" src="/static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="/static/js/dc.min.js"></script>
     <script type="text/javascript" src="/static/js/queue.min.js"></script>
-   <!-- <script type="text/javascript" src="/static/js/graph.js"></script>-->
+    <!--<script type="text/javascript" src="/static/js/graph.js"></script>-->
 
   
     
@@ -151,18 +151,11 @@
     
      <script>
      
-        queue()
-            .defer(d3.csv, "/housing_data/soc_housing.csv")
-            .await(makeSocialGraphs);
-            
-            
-          queue()
-            .defer(d3.json, "/housing_data/esb_connections.json")
-            .await(makeEsbGraphs);
-        
-        
-        
-        function makeSocialGraphs(error, housingData) {
+
+queue()
+.defer(d3.csv, "/housing_data/soc_housing.csv")
+.await(makeSocialGraphs) 
+     function makeSocialGraphs(error, housingData) {
             var ndx = crossfilter(housingData);
             
             
@@ -271,8 +264,12 @@
             
             
             dc.renderAll();
-            
-            function makeEsbGraphs(error, esb_connectionsData) {
+        }
+{
+queue()
+.defer(d3.json, "/housing_data/esb_connections.json")
+.await(makeESBGraphs)
+ function makeESBGraphs(error, esb_connectionsData) {
         var ndx = crossfilter(esb_connectionsData);
         
         var parseDate = d3.time.format("%Y").parse;
@@ -397,13 +394,15 @@
    
         
         dc.renderAll();
-    }
-    
+        }        
+        
         }
+        
+    
         
     </script>
     
-    
+
     
     
    
