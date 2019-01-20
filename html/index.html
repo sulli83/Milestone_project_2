@@ -27,6 +27,7 @@
 
 <body>
   <container>
+     <section>
      <div id="heading_para">
     <h1>
       Social Housing Construction for quarter 1 - 2018
@@ -47,7 +48,7 @@
         In light of the increased population density of the area.</p>
         <!--closing body_text-->
         </div>
-        <div id="number_of_units_per_LA" class="charts"></div>
+        <div id="number_of_units_per_LA" class="charts pie_graphic"></div>
         <!--closing pie_graph grid-->
     </div>
     
@@ -62,7 +63,7 @@
         by the Housing Agency and the Charities Regulator. While the Approved Housing Bodies have been adding to their stock (including through developments on sites provided by NAMA through the NARPs scheme or financed under the CALF and CAS schemes), the overall volumes being added and the scale of the Irish AHB sector is relatively modest compared to the overall need cited above.</p>
         <!--closing body text-->
         </div>
-        <div id="number_of_units_per_funding_programme" class="charts"></div>
+        <div id="number_of_units_per_funding_programme" class="charts pie_graphic"></div>
     <!--closing pie-graph div-->
     </div>
     
@@ -81,7 +82,7 @@
       to perceived social issues.</p>
       <!--closing body_text-->
       </div>
-      <div id="pie-chart" class="charts"></div>
+      <div id="pie-chart" class="charts pie_graphic"></div>
     </div>
     
     <!--closing of graph_block-->
@@ -100,31 +101,40 @@
   
   <div id="LA_rowChart" class="col-md-4 my-4 charts">
     <h3>Local Authority Row Chart</h3>
+    <div class = "body_text">
     <p>Bar Chart displaying the same data as can be seen in the first pie graph.</p>
-   
-  </div>
+    <!--close body text div-->
+    </div>
+  
   <!--clsoing row-chart-->
   </div>
-  <div>
-       <h1>Data Visualisation 1972-2015</h1>
+  </section>
+  <section>
+       <h1>ESB Connections 1972-2015</h1>
 
     <h2>DC LineChart</h2>
 
-    <div>
+    <div class="esc_connections_block">
         <h3>ESB Connections 1972-2015</h3>
         <h3>Local Authority Connections compared to Private Ownership</h3>
+        
+        <div class="body_text">
         <p>This graph clearly highlight a lack of adequate response to the need for social housing ESB connections since the 90's.
         The data for social house can be seen fluctuate in tandem with the data for private housing figures.
         More recently the figure for private houses have begun to increases again quite rapidly since the 
         end of the recession which isn't the case social housing units.This would suggest a reluctance inn policy
         or ideological opposition to such developments. ESB connections in both fields can be seen to reduce to a very minimal
         percentage of those in the Private House connections.</p>
+        <!--end of body text-->
+        </div>
+    <div class="graph_block">
         <div id="composite-chart" class="line_charts"></div>
     </div>
     
     <div>
         <h3>ESB Connections 1972-2015</h3>
         <h3>Local Authority, Social and Voluntary again compared with Private Ownership connections</h3>
+    <div class="graph_block">
         <div id="composite-chart-1" class="line_charts"></div>
     </div>
     
@@ -133,6 +143,8 @@
         <div id="bar-chart"></div>
     </div>
   </div>
+  <!--closing esb cons  block-->
+  </section>
   <!--
   <div>
       <h3>Completed Row Chart</h3>

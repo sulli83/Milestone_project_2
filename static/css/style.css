@@ -1,5 +1,5 @@
 body{
-    background-color:grey;
+    background-color:#4ABDAC;
     font-size:100px;
     color:black;
 
@@ -8,25 +8,37 @@ body{
 navbar{
     background-color:yellow;
     height:200px;
+
 }
 
 h1{
-    background-color:black;
-    color:#ccc;
+    background-color:#FC4A1A;
+    color:white;
     margin-left:20%;
     padding-left:5%;
     max-width:60%;
-    border-radius:5%;
+    border-radius:20px;
+    padding:3%;
 }
 
 h3{
     color:black;
-    background-color:red;
+    background-color:
+    /*clean*/
+    #DFDCE3;
+    border-radius:20px;
+    padding:5%;
+    
+
 }
 
 .pie_graph{
     display:flex;
     flex-direction:column;
+}
+
+.pie_graphic{
+    padding-top:3%;
 }
 
 
@@ -36,18 +48,31 @@ h3{
     color:orange;
 }
 
+.esb_connections_block{
+    width:100%;
+}
+
 p{
     font-size:10px;
 }
 
 .charts{
+    
     color:black;
     width:100%;
+    min-height:300px;
 }
 
 .body_text{
+    padding:3%;
     min-height:200px;
+    font-size:15px;
     background-color:blue;
+    border-radius:20px;
+    background-color:
+    /*vermillion*/
+    #FC4A1A;
+    color:white;
 }
 
 
