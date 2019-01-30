@@ -1,5 +1,5 @@
 body{
-    background-color:#4ABDAC;
+    background-color:#f0ffff;
     font-size:100px;
     color:black;
 
@@ -18,7 +18,7 @@ h1{
     padding-left:5%;
     max-width:60%;
     border-radius:20px;
-    padding:3%;
+    padding:0.5em;
 }
 
 h3{
@@ -27,7 +27,7 @@ h3{
     /*clean*/
     #DFDCE3;
     border-radius:20px;
-    padding:5%;
+    padding:0.5em;
     
 
 }
@@ -35,17 +35,30 @@ h3{
 .pie_graph{
     display:flex;
     flex-direction:column;
+    background-color:blue;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    width:90%;
 }
 
 .pie_graphic{
     padding-top:3%;
+    width:80%;
+}
+
+.row-block{
+    background-color:blue;
 }
 
 
 .line_charts{
     margin-left:2px;
-    margin-left:2px;
     color:orange;
+    background-color:blue;
+}
+
+.row-charts{
+    background-color:blue;
 }
 
 .esb_connections_block{
