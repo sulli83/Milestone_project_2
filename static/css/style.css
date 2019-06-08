@@ -1,116 +1,88 @@
-body{
-    background-color:#f0ffff;
-    font-size:100px;
-    color:black;
-
-}
-
-navbar{
-    background-color:yellow;
-    height:200px;
-
-}
-
-h1{
-    background-color:#FC4A1A;
-    color:white;
-    margin-left:20%;
-    padding-left:5%;
-    max-width:60%;
-    border-radius:20px;
-    padding:0.5em;
-}
-
-h3{
-    color:black;
-    background-color:
-    /*clean*/
-    #DFDCE3;
-    border-radius:20px;
-    padding:0.5em;
-    
-
-}
-
-.pie_graph{
-    display:flex;
-    flex-direction:column;
-    background-color:blue;
-    padding-top:.5em;
-    padding-bottom:.5em;
-    width:90%;
-}
-
-.pie_graphic{
-    padding-top:3%;
-    width:80%;
-}
-
-.row-block{
-    background-color:blue;
-}
-
-
-.line_charts{
-    margin-left:2px;
-    color:orange;
-    background-color:blue;
-}
-
-.row-charts{
-    background-color:blue;
-}
-
-.esb_connections_block{
-    width:100%;
-}
-
-p{
-    font-size:10px;
-}
-
-.charts{
-    
-    color:black;
-    width:100%;
-    min-height:300px;
-}
-
-.body_text{
-    padding:3%;
-    min-height:200px;
-    font-size:15px;
-    background-color:blue;
-    border-radius:20px;
-    background-color:
-    /*vermillion*/
-    #FC4A1A;
-    color:white;
-}
-
-
-#section_one{
-    display:flex;
-    flex-direction:row;
-    background-color:yellow;
-    justify-content:flex-start;
-    width:80%;
-}
-
-#section_two{
-    display:flex;
-    flex-direction:row;
-    background-color:blue;
-    width:80%;
-}
 
 .graph_block{
     display:flex;
     flex-direction:row;
-    }
+    align-items:center;
+}
 
-.row_chart_block{
+container{
+    display:flex;
+    flex-direction:column;
+}
+
+h4{
+    background-color:blue;
+}
+
+h5{
+    background-color:blue}
+
+@media (max-width:800px){
+    .graph_block{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        
+    }
+}
+
+h3,h1,h2{
+    background-color:#a3bfed;
+    margin-left:3em;
+    margin-right:3em;
+    border-radius:10px;
+    color:red;
+    text-align:center;
+    border-width:20px;
+    border-color:black;
+}
+
+
+
+#first_section{
+    display:flex;
+    flex-direction:row;
+ 
+}
+/*
+#second_section{
+    background-color:yellow; 
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    background-color:orange;
 }
+
+*/
+
+#third_section{
+
+    display:flex;
+    flex-direction:column;
+    background-color:pink;
+  
+   
+}
+
+
+#fourth_section{
+/*    background-color:green;  */
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    background-color:yellow;
+    /*position:relative;
+    top:-200px;
+     */
+}
+
+
+
+#large_block{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    
+}
+
+
