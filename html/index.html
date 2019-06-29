@@ -11,11 +11,14 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
     
-    
-    <script src="/static/js/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+   <script src="/static/js/d3.min.js"></script>
     <script src="/static/js/crossfilter.min.js"></script>
     <script src="/static/js/dc.min.js"></script>
     <script src="/static/js/queue.min.js"></script>
+     <script src="/static/js/script.js"></script>
+    <script src="/static/js/graph.js"></script>
+
 
   
     
@@ -28,50 +31,68 @@
 
 
 <body>
-  
-     
-     <section id= "first_section">
-    <div class="part_1">
-     <div id="heading_para">
+ 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Analysis Of Social Housing Construction Data</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#home_id">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#social_id">Social Housing Data</a>
+      <a class="nav-item nav-link" href="#esb_id">ESB Connection Data</a>
+
+    </div>
+  </div>
+</nav>
+  <div id="home_id"></div>
+       <div id="heading_para d-flex justify-content-center">
     <h4>
       Social Housing Construction for quarter 1 - 2018
     </h4>
-  
+    
     <h5>
     This project an analysis of data obtained from the Gov.org website in relation to Social Housing in
     Ireland.
     </h5>
     
+     <button>
+    <div id="large_button">View Social Housing Graphs</div>
+    </button>
+    <img scr="/static/images/micaela-parente-551085-unsplash.jpg"></img>
+    
     <!--closing of heading_para-->
     </div>
+    
+    <div class="graph_body">
+     <section id= "first_section">
+    <div class="content_container background alt-background">
+   
   
-    
-    <h5>section 2</h5>
 
-    <div class="graph_block">
+    <div id="social_id"></div>
 
+   
+      <div class="part_1">
+       <div class=" col-sm-12 col-lg-3 pie_1 pie_graph">
+        <h5>Total Number Of Units Per Funding Programme</h5>
+       
+       <div id="number_of_units_per_LA" class="charts pie_graphic"></div>
+    
+        </div>    
     
     
-      
+    
     <div class=" col-sm-12 col-lg-3 pie_1 pie_graph">
         <h5>Total Number Of Units Per Funding Programme</h5>
        
-       <div id="number_of_units_per_LA" class="col-sm-12 col-lg-12 charts pie_graphic"></div>
-     
-        </div>
-        </div>
-  
-        
-    
-    <div class=" col-sm-12 col-lg-3 pie_1 pie_graph">
-        <h5>Total Number Of Units Per Funding Programme</h5>
-       
-       <div id="number_of_units_per_funding_programme" class="col-sm-12 col-lg-12 charts pie_graphic"></div>
+       <div id="number_of_units_per_funding_programme" class="charts pie_graphic"></div>
     
         </div>
         
     <!--closing pie-graph div-->
-    </div>
+    
  
     
    <!--
@@ -89,18 +110,23 @@
        <div id="pie-chart" class="charts pie_graphic"></div>
      
       </div>
+      
+      </div>
     <!--  div id="pie-chart" class="col-sm-12 col-lg-12 charts pie_graphic"div
  
     
     closing of graph_block
-    closing part one
-   
+    closing part one-->
     
-     second graph of block-->
+    </section>
+    
+    <!-- second graph of block-->
    <div class = "part_2">
+      
   <div class="row_chart_block_2">
+   
   <div id="LA_rowChart" class="col-sm-12 col-lg-5 my-4 charts row_charts">
-   <!-- <h5>Total Number of Units - Row Chart</h5>  -->
+   <h5>Total Number of Units - Row Chart</h5>
   </div>
     <div class = "body_text">
     <!--
@@ -120,7 +146,7 @@
   <!--clsoing part_2-->
   
     
-    </section>
+
  <div id = "large_block">   
 <section id="third_section">
     
@@ -147,9 +173,12 @@
   <!--second graph of block-->
   <div class="row_chart_block_2">
   <div id="LA_rowChart???" class="col-sm-12 col-lg-5 my-4 charts row_charts">
-    <h5>Total Number of Units - Row Chart</h5>
+   
   </div>
     <div class = "body_text">
+        
+        
+   
     <!--
     <p>Bar Chart displaying the same data as can be seen in the first pie graph.</p>
     close body text div-->
@@ -162,12 +191,13 @@
   
   <!--closing of row-block-->
   
- 
+  </div>
   </section>
   <section id="fourth_section">
     <!--   <h1>ESB Connections 1972-2015</h1>
-
+    
     <h2>DC LineChart</h2>  -->
+    <div id="esb_id"></div>
     <h5>section 4</h5>
     <div class="esb_connections_block">
         <h5>ESB Connections 1972-2015</h5>
@@ -218,263 +248,16 @@
     </div>
     -->
     
+    <!--end of graph body-->
+    
+    
+    <!--content-container-->
+    </div>
+    
     
 
     
-     <script>
-     
 
-queue()
-.defer(d3.csv, "/housing_data/soc_housing.csv")
-.await(makeSocialGraphs) 
-     function makeSocialGraphs(error, housingData) {
-            var ndx = crossfilter(housingData);
-            
-            
-          
-            /*piechart for Local Authority and units*/
-            var LA_dim = ndx.dimension(dc.pluck('LA'));
-            var total_number_of_units = LA_dim.group().reduceSum(dc.pluck('Units'));
-            dc.pieChart('#number_of_units_per_LA')
-                .height(null)
-                .radius(null)
-                .transitionDuration(1500)
-                .dimension(LA_dim)
-                .group(total_number_of_units);
-            
-            /*piechart for funding programme information*/
-            var funding_programme_dim = ndx.dimension(dc.pluck('Funding Programme'));
-            var total_number_of_units_per_funding_programme = funding_programme_dim.group().reduceSum(dc.pluck('Units'));
-            dc.pieChart('#number_of_units_per_funding_programme')
-                .height(null)
-                .radius(null)
-                .transitionDuration(1500)
-                .dimension(funding_programme_dim)
-                .group(total_number_of_units_per_funding_programme);
-                
-           
-     
-          /*size of developments */      
-          var size_dimension = ndx.dimension(function (d) {
-            if (d.Units > 100)
-                return "Large development (100+ Units)";
-            else if (d.Units > 50)
-                return "Large/Medium development (100-50 Units)";
-            else if (d.Units > 25)
-                return "Medium development (50-25 Units)";
-            else if (d.Units > 10)
-                return "Small development (25-10 Units)";
-            else
-                return "Very small development (Under 10 Units)";
-        });
-        
-        var devSizeColors = d3.scale.ordinal()
-        .domain(["Large development (100+ Units)","Large/Medium development (100-50 Units)","Medium development (50-25 Units)",
-        "Small development (25-10 Units)","Very small development (Under 10 Units)"])
-        .range(["rgb(49, 163, 84)", "rgb(253, 141, 60)", "rgb(49, 130, 189)","rgb(116, 196, 118)","rgb(117, 107, 177)"]);
-        
-        var size_group = size_dimension.group();
-        dc.pieChart('#pie-chart')
-             .transitionDuration(null)
-            .radius(null)
-          /*  .innerRadius(50)*/
-            .colors(devSizeColors)
-            .dimension(size_dimension)
-            .group(size_group);
-            
-          /*   var size_dimension = ndx.dimension(function (d) {
-            if (d.Units > 50)
-                return "Large and medium development";
-            else
-                return "Small development"
-        });
-        var size_group = size_dimension.group();
-        dc.pieChart('#pie-chart-2')
-            .height(400)
-            .radius(300)
-            .dimension(size_dimension)
-            .group(size_group);
-   
-    
-            
-        /*barchart for AHB Bar Chart*/ 
-        var name_dim = ndx.dimension(dc.pluck('Approved Housing Body'));
-        var total_units_per_ahb = name_dim.group().reduceSum(dc.pluck('Units'));
-        dc.rowChart("#AHB_rowChart")
-            .width(500)
-            .height(1000)
-            .margins({top: 10, right: 10, bottom: 10, left: 10})
-            .dimension(name_dim)
-            .group(total_units_per_ahb)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            /*.xUnits(dc.units.ordinal)*/
-            /*.xAxisLabel("Units")*/
-            .elasticX(true)
-            .xAxis().ticks(10);
-         
-         
-         /*java script for Local Authority Bar Chart information.*/   
-        var name_dim = ndx.dimension(dc.pluck('LA'));
-        var total_units_per_local_authority = name_dim.group().reduceSum(dc.pluck('Units'));
-        dc.rowChart("#LA_rowChart")
-            .width(300)
-            .height(400)
-            .margins({top: 10, right: 50, bottom: 30, left: 50})
-            .dimension(name_dim)
-            .group(total_units_per_local_authority)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            /*.xUnits(dc.units.ordinal)*/
-           /*.xAxisLabel("Units")*/
-            .elasticX(true)
-            .xAxis().ticks(10);
-         
-            
-            
-            dc.renderAll();
-        }
-{
-queue()
-.defer(d3.json, "/housing_data/esb_connections.json")
-.await(makeESBGraphs)
- function makeESBGraphs(error, esb_connectionsData) {
-        var ndx = crossfilter(esb_connectionsData);
-        
-        var parseDate = d3.time.format("%Y").parse;
-        esb_connectionsData.forEach(function(d){
-            d.date = parseDate(d.date);
-        });
-        
-        var date_dim = ndx.dimension(dc.pluck('date'));
-        var minDate = date_dim.bottom(1)[0].date;
-        var maxDate = date_dim.top(1)[0].date;
-        function units_by_owner(owner) {
-            return function(d) {
-                if (d.owner === owner) {
-                    return +d.units;
-                } else {
-                    return 0;
-                }
-            }
-        }
-        var PrivateUnitsByDate = date_dim.group().reduceSum(units_by_owner('Private'));
-        var SocialUnitsByDate = date_dim.group().reduceSum(units_by_owner('Social'));
-        
-       
-        var compositeChart = dc.compositeChart('#composite-chart');
-        compositeChart
-            .width(600)
-            /*990*/
-            .height(150)
-            /*400*/
-            .dimension(date_dim)
-            .x(d3.time.scale().domain([minDate, maxDate]))
-            .yAxisLabel("units")
-            .xAxisLabel("date")
-            .legend(dc.legend().x(80).y(20).itemHeight(30).gap(5))
-            .renderHorizontalGridLines(true)
-            .compose([
-                dc.lineChart(compositeChart)
-                    .colors('green')
-                    .group(PrivateUnitsByDate, 'Private'),
-                dc.lineChart(compositeChart)
-                    .colors('red')
-                    .group(SocialUnitsByDate, 'Social')
-               ])
-            .brushOn(true)
-            .render();
-            
-        /*functions and variables for private and social houses*/
-        
-        
-        var date_dim = ndx.dimension(dc.pluck('date'));
-        var minDate = date_dim.bottom(1)[0].date;
-        var maxDate = date_dim.top(1)[0].date;
-        function units_by_name(name) {
-            return function(d) {
-                if (d.name === name) {
-                    return +d.units;
-                } else {
-                    return 0;
-                }
-            }
-        }
-        var LAunitsByDate = date_dim.group().reduceSum(units_by_name('LA'));
-        var SocunitsByDate = date_dim.group().reduceSum(units_by_name('Soc'));
-        
-        var PrivunitsByDate = date_dim.group().reduceSum(units_by_name('Priv'));
-        var compositeChart = dc.compositeChart('#composite-chart-1');
-        compositeChart
-            .width(600)
-            /*990*/
-            .height(150)
-            .dimension(date_dim)
-            .x(d3.time.scale().domain([minDate, maxDate]))
-            .yAxisLabel("units")
-            .xAxisLabel("date")
-            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-            .renderHorizontalGridLines(true)
-            .compose([
-                dc.lineChart(compositeChart)
-                    .colors('red')
-                    .group(LAunitsByDate, 'SocialHousing - Local Authority'),
-                dc.lineChart(compositeChart)
-                    .colors('yellow')
-                    .group(SocunitsByDate, 'Social Housing - Voluntary & Co-operative Housing'),
-                dc.lineChart(compositeChart)
-                    .colors('green')
-                    .group(PrivunitsByDate, 'Private Ownership')
-            ])
-            .brushOn(false)
-            .render();
-         
-         
-         /*code for bar chart*/ 
-         var name_dim = ndx.dimension(dc.pluck('owner'));
-
-        var unitsByFpDub = name_dim.group().reduceSum(function (d) {
-            if (d.owner === 'Private') {
-                return +d.units;
-            } else {
-                return 0;
-            }
-        });
-
-        var unitsByFpCor = name_dim.group().reduceSum(function (d) {
-            if (d.owner === 'Social') {
-                return +d.units;
-            } else {
-                return 0;
-            }
-        });
-
-        var stackedChart = dc.barChart("#bar-chart");
-        stackedChart
-            .width(500)
-            .height(500)
-            .dimension(name_dim)
-            .yAxisLabel("units")
-            .margins({top: 10, right: 50, bottom: 30, left: 100})
-            .group(unitsByFpDub, "Private")
-            .stack(unitsByFpCor, "Social")
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .legend(dc.legend().x(420)/*420*/.y(0).itemHeight(15).gap(5));
-
-        stackedChart.margins().right = 100;
-            
-        
-   
-        
-        dc.renderAll();
-        }        
-        
-        }
-        
-    
-        
-    </script>
 
 
     
